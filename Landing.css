@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 @font-face {
   font-family: MADETOMMY;
   src: url(./assets/fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
@@ -35,19 +36,29 @@ body {
 * {
   font-family: MADETOMMY;
 }
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .main {
   position: relative;
-  background-image: url("./assets/images/earth.png");
-  background-position: center center;
   height: 800px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .img-radar {
   position: absolute;
   left: -133px;
   top: -39px;
+}
+.title-banner-bottom {
+  justify-content: space-evenly;
 }
 .img-moon {
   position: absolute;
@@ -97,6 +108,21 @@ nav ul li a {
   opacity: 0.5;
   /* border-bottom: 1px solid white; */
 }
+.content-main-responsive-item_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.content-main-responsive-item p {
+  font-size: 5px;
+  letter-spacing: 0.25px;
+  color: #b8b8b8;
+}
+.p_number {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 480px) {
   #navbarNavDropdown {
     display: flex;
@@ -104,6 +130,38 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 480px) {
+  .logo_space {
+    margin-top: 20px !important;
+  }
+  .binance {
+    width: 80px !important;
+    height: 36px !important;
+  }
+  .nasa {
+    width: 48.5px;
+    height: 10px;
+  }
+  .logo_nasa {
+    width: 35px;
+    height: 17.5px;
+  }
+  .space_x {
+    width: 99px;
+    height: 32.7px;
+  }
+  .Concept {
+    font-size: 19px !important;
+    line-height: 10px;
+    color: #e1e1e1;
+    margin-bottom: 50px;
+  }
+  .icon {
+  }
+  .COMUNICATION {
+    font-size: 24px;
+    letter-spacing: 0.36px;
+    color: #f1f1f1;
+  }
   .content-main-responsive {
     display: block !important;
   }
@@ -137,7 +195,7 @@ nav ul li a {
     text-align: center !important;
   }
   .content_generate_contructor_right_item2_span {
-    font-size: 12px;
+    font-size: 11px;
   }
   .content_generate_cost {
     border: 1px solid #ff6d00;
@@ -160,7 +218,12 @@ nav ul li a {
     display: block !important;
   }
   .btn_W-Comunication {
+    font-size: 11px !important;
     width: 50% !important;
+    font-weight: normal !important;
+    line-height: 1px !important;
+    letter-spacing: 0.18px !important;
+    padding: 15px;
   }
   .content-astronaut {
     height: 157px !important;
@@ -171,8 +234,8 @@ nav ul li a {
     right: 30px;
     padding: 0.5px 0 14px 13.5px;
     background-color: #1c1c1c;
-    top: 21px;
-    left: 126px;
+    top: 20px;
+    right: 7px;
     z-index: 2;
   }
   .navbar-toggle-mb {
@@ -242,6 +305,7 @@ nav ul li a {
   .imgCarousel {
     height: 300px;
     margin-left: 0 !important;
+    width: 100%;
   }
   .img-ship-radar {
     top: 134px;
@@ -280,6 +344,9 @@ nav ul li a {
   );
   height: 100px;
   width: 100%;
+}
+.navbar{
+  z-index: 11;
 }
 .navbar-toggle-mb {
   display: none;
@@ -327,7 +394,11 @@ nav ul li a:hover {
   color: white;
   font-size: 13px;
 }
+.modal-dialog {
+  max-width: 653px !important;
+}
 .content_generate_contructor_right {
+  padding: 10px;
   width: 301px;
   height: 414px;
   background-color: #ff6d00;
@@ -513,7 +584,7 @@ nav ul li a:hover {
 }
 /* footer */
 .content_concept {
-  background-color: #191919;
+  background-color: #0d0d0d;
   height: 192px;
 }
 .tabs-purpose {
@@ -532,8 +603,14 @@ nav ul li a:hover {
   padding-top: 80px;
   color: #696969;
 }
+.Concept {
+  margin-bottom: 50px;
+}
+.logo_space {
+  margin-top: 50px;
+}
 .content_W-Comunication {
-  background-color: #191919;
+  background-color: #0d0d0d;
   height: 383px;
 }
 .content_W-Comunication_item {
@@ -543,7 +620,7 @@ nav ul li a:hover {
 }
 .btn_W-Comunication {
   width: 320px;
-  padding: 7px;
+  padding: 11px;
   background-color: #191919;
   border: 1px solid white;
   border-radius: 6px;
@@ -725,8 +802,7 @@ nav ul li a:hover {
 }
 .img_responsive {
   height: 89px;
-  padding-left: 48px;
-  padding-top: 5px;
+  margin: 0 auto;
 }
 .p_style {
   font-size: 13px;
@@ -743,9 +819,14 @@ nav ul li a:hover {
   font-weight: bold;
   opacity: 0.6;
 }
-.item-info-bottom-banner {
-  width: 200px !important;
+.yt-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+/* .item-info-bottom-banner {
+  width: 200px !important;
+} */
 .content_generate_contructor_left {
   width: 416px;
   height: 251px;
@@ -841,4 +922,18 @@ nav ul li a:hover {
 }
 .content_W_Team_content img {
   object-fit: contain;
+}
+.modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.play {
+  color: white;
+  position: absolute;
+}
+.img-pop {
+  position: relative;
 }
