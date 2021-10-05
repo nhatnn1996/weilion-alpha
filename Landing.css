@@ -27,6 +27,12 @@ body {
   font-weight: 500;
   font-style: italic, oblique;
 }
+@font-face {
+  font-family: CourierNewPSMT;
+  src: url(./assets/fonts/Courier\ New\ Regular.ttf);
+  font-weight: normal;
+  font-style: italic, oblique;
+}
 /* @font-face {
   font-family: MADETOMMY;
   src: url(./assets/fonts/MADE\ TOMMY\ Light_PERSONAL\ USE.otf);
@@ -37,10 +43,10 @@ body {
   font-family: MADETOMMY;
 }
 #background-video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -123,15 +129,96 @@ nav ul li a {
 .p_number {
   margin-bottom: 0;
 }
+.wellion-container{
+  padding-bottom: 5rem;
+}
+.box-card-right{
+  padding-left: 35px !important
+}
+.advantaged-container{
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 1920px) {
+  #navbarNavDropdown {
+    justify-content: flex-end !important;
+  }
+}
 @media screen and (min-width: 480px) {
+  .twitter_insta{
+    margin: 0 !important
+  }
   #navbarNavDropdown {
     display: flex;
     justify-content: space-around;
   }
 }
 @media screen and (max-width: 480px) {
+  .content_generate_contructor_left {
+    margin-left: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .launch_location_responsive{
+    display: flex !important;
+  }
+  .launch_location{
+    display: none !important
+  }
+  .content_W_Orbit{
+    background-image: none !important;
+    height: 438px !important;
+    background-color: #0d0d0d !important
+  }
+  .launch2{
+    display: block !important
+  }
+  .box-card-right{
+    padding: 0 !important
+  }
+  .launch{
+    display: none;
+  }
+  .content_generate_contructor_left p{
+    padding: 36px !important;
+    width: 336px !important
+  }
+  .chat1{
+    display: none;
+  }
+  .chat{
+    display: block !important
+  }
+  .iframe_res{
+    width: 150px !important;
+    height: 120px !important;
+  }
+  #background-video_astronaut{
+    height: 52vh;
+  }
+  .content_astronaut{
+    height: auto !important;
+    width: auto !important;
+  }
+  .insta_pc{
+    display: none;
+  }
+  .insta_responsive{
+    display: block !important
+  }
+  .content_W-Comunication{
+    height: 383px !important;
+    background-color: #0d0d0d !important
+  }
+  .content_concept{
+    background-color: #0d0d0d !important
+  }
+  .content_concept_item{
+    margin: 0 !important
+  }
   .logo_space {
     margin-top: 20px !important;
+    margin-right: 0 !important
   }
   .binance {
     width: 80px !important;
@@ -158,7 +245,7 @@ nav ul li a {
   .icon {
   }
   .COMUNICATION {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.36px;
     color: #f1f1f1;
   }
@@ -173,6 +260,7 @@ nav ul li a {
   }
 
   .nav-link {
+    cursor: pointer;
     margin: 0;
   }
   .icon-close {
@@ -180,6 +268,7 @@ nav ul li a {
     margin-top: 10px !important;
   }
   .nav-item {
+    cursor: pointer !important;
     text-align: left;
     padding-left: 22px;
     padding-right: 22px;
@@ -196,6 +285,7 @@ nav ul li a {
   }
   .content_generate_contructor_right_item2_span {
     font-size: 11px;
+    font-weight: normal !important
   }
   .content_generate_cost {
     border: 1px solid #ff6d00;
@@ -218,9 +308,8 @@ nav ul li a {
     display: block !important;
   }
   .btn_W-Comunication {
-    font-size: 11px !important;
-    width: 50% !important;
-    font-weight: normal !important;
+    font-size: 9px !important;
+    width: 100% !important;
     line-height: 1px !important;
     letter-spacing: 0.18px !important;
     padding: 15px;
@@ -229,6 +318,7 @@ nav ul li a {
     height: 157px !important;
   }
   .navbar-nav {
+    cursor: pointer !important;
     width: 200px;
     position: absolute;
     right: 30px;
@@ -253,6 +343,7 @@ nav ul li a {
     border-bottom: none;
   }
   .content_generate_contructor_left_p {
+    width: 100%;
     font-size: 12px !important;
   }
   .content_generate_margin {
@@ -263,9 +354,8 @@ nav ul li a {
   }
   .content_generate_manufacturer {
     margin: 0 32px;
-    font-size: 14px;
+    font-size: 9px;
     margin-top: 40px;
-    font-weight: bold;
   }
   .title {
     display: none;
@@ -278,9 +368,11 @@ nav ul li a {
   .content_purpose_advantaged_tabs {
     margin: 0 !important;
     margin-top: 30px !important;
+    height: 331px !important
   }
   .tab-content {
     padding: 0 10px !important;
+    
   }
   .tabs-purpose {
     font-size: 12px;
@@ -304,8 +396,6 @@ nav ul li a {
   }
   .imgCarousel {
     height: 300px;
-    margin-left: 0 !important;
-    width: 100%;
   }
   .img-ship-radar {
     top: 134px;
@@ -322,6 +412,7 @@ nav ul li a {
   }
   .p_style {
     padding: 0 !important;
+    max-width: 90% !important;
   }
   .exchange-NFT {
     right: 8px;
@@ -358,9 +449,9 @@ nav ul li a {
   margin-top: 2rem;
 }
 .tab-content {
-  margin-bottom: 4rem;
   font-size: 14;
   padding: 0 60px;
+  margin-bottom: 3.5rem;
 }
 nav ul li a:hover {
   border-bottom: 1px solid;
@@ -371,7 +462,7 @@ nav ul li a:hover {
 .navbar-brand {
   padding: 0 !important;
   z-index: 100;
-  font-family: CourierNew;
+  font-family: CourierNewPSMT;
   letter-spacing: 3px;
 }
 .content_generate {
@@ -385,20 +476,20 @@ nav ul li a:hover {
   font-weight: bold;
 }
 .content_generate_contructor_left {
-  width: 416px;
-  height: 251px;
-  border: 1.5px solid white;
+  margin-left: 4rem;
 }
 .content_generate_contructor_left p {
-  padding: 35px 30.9px 35px 30.5px;
+  padding: 50px;
+  width: 469px;
   color: white;
   font-size: 13px;
+  text-align: left;
 }
 .modal-dialog {
   max-width: 653px !important;
 }
 .content_generate_contructor_right {
-  padding: 10px;
+  padding: 36px;
   width: 301px;
   height: 414px;
   background-color: #ff6d00;
@@ -409,7 +500,7 @@ nav ul li a:hover {
 }
 .content_generate_contructor_right_item {
   text-align: center;
-  color: white;
+  color: #e1e1e1;
 }
 .content_generate_contructor_right_item2 {
   padding-left: 15px;
@@ -420,9 +511,11 @@ nav ul li a:hover {
 }
 .content_generate_manufacturer {
   color: #b8b8b8;
+  font-size: 11px;
+  padding-top: 16px;
 }
 .generate {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -445,7 +538,7 @@ nav ul li a:hover {
 /* content_purpose_advantaged */
 .imgCarousel {
   /* margin-left: 300px; */
-  margin-left: 290px;
+  /* margin-left: 290px; */
 }
 .content_purpose_advantaged {
   height: 100%;
@@ -461,7 +554,7 @@ nav ul li a:hover {
   background-color: black;
 }
 .content_purpose_advantaged_tabs {
-  margin: 0 300px;
+  max-width: 600px;
   border: 2px solid #b8b8b8;
   background-color: #191919;
   margin-top: 60px;
@@ -523,19 +616,27 @@ nav ul li a:hover {
 }
 .content_purpose_advantaged_black {
   background-color: #191919;
-  width: 159px;
-  height: 39px;
+  width: 203px;
+  height: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 1px 2.5px 3.5px 0 rgba(0, 0, 0, 0.5);
+}
+marquee{
+  color: white;
+  font-size: 12px;
+}
+.item-info-bottom-banner-chart{
+  max-width: 270px;
 }
 .content_purpose_advantaged_none {
   display: none;
 }
 .content_purpose_advantaged_black span {
-  color: #b8b8b8;
-  font-weight: bold;
+  color: #b2b2b2;
+  font-size: 14px;
 }
 .content_purpose_advantaged_item {
   text-align: center;
@@ -564,6 +665,7 @@ nav ul li a:hover {
 .btn-purpose {
   color: white;
   font-weight: bold;
+  margin: 0 10px;
 }
 
 /* astronault */
@@ -578,18 +680,22 @@ nav ul li a:hover {
 /* W_orbit */
 .content_W_Orbit {
   background-image: url("./assets/images/moon-space.png");
-  height: 750px;
+  height: 835px;
   background-size: cover;
   color: white;
 }
 /* footer */
 .content_concept {
-  background-color: #0d0d0d;
-  height: 192px;
+  background-color: #191919;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #696969;
 }
 .tabs-purpose {
   color: white;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   padding: 0 16px;
   font-size: 13px;
 }
@@ -600,32 +706,35 @@ nav ul li a:hover {
 }
 .content_concept_item {
   text-align: center;
-  padding-top: 80px;
+  
   color: #696969;
+  width: 600px;
 }
 .Concept {
   margin-bottom: 50px;
 }
 .logo_space {
   margin-top: 50px;
+  margin-right: 21px;
 }
 .content_W-Comunication {
-  background-color: #0d0d0d;
-  height: 383px;
+  background-color: #191919;
+  height: 550px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content_W-Comunication_item {
-  padding-top: 100px;
   color: #e1e1e1;
   text-align: center;
 }
 .btn_W-Comunication {
   width: 320px;
-  padding: 11px;
+  padding: 7px;
   background-color: #191919;
   border: 1px solid white;
   border-radius: 6px;
   color: white;
-  font-weight: bold;
   font-size: 13px;
 }
 .content_W-Comunication_item .icon {
@@ -636,15 +745,26 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 .content_W_Team {
-  background-color: #0d0d0d;
+  background-color: #191919;
+  border-bottom: 1px solid rgba(196, 194, 194,0.2);
   height: 100%;
 }
 .content_W_Team_content_item {
   position: relative;
 }
+.item-trans{
+  transform: translateY(-40px);
+    bottom: unset !important;
+}
+.text_item p{
+ padding: 0 35px;
+ font-weight: 100;
+}
 .text_item {
+  padding: 0 30px;
+  width: 100%;
   position: absolute;
-  bottom: -64px;
+  bottom: -57px;
   text-align: center;
 }
 .text_item h2 {
@@ -673,6 +793,7 @@ nav ul li a:hover {
   height: 10px;
   background-color: rgb(255, 255, 255);
   width: 10px;
+  left: 48.5%;
   border-radius: 50%;
   top: -35%;
   z-index: 112;
@@ -695,7 +816,7 @@ nav ul li a:hover {
   width: 10px;
   border-radius: 50%;
   bottom: 86px;
-  left: 48.3%;
+  left: 49%;
   z-index: 112;
 }
 .line-content2::after {
@@ -716,7 +837,7 @@ nav ul li a:hover {
   width: 10px;
   border-radius: 50%;
   bottom: 86px;
-  left: 48.3%;
+  left: 49%;
   z-index: 112;
 }
 .img-content-team {
@@ -741,7 +862,7 @@ nav ul li a:hover {
   width: 10px;
   border-radius: 50%;
   bottom: 86px;
-  left: 48.3%;
+  left: 49%;
   z-index: 112;
 }
 .content_W_Roadmap_item {
@@ -792,7 +913,7 @@ nav ul li a:hover {
 .content_W_Team_responsive_border {
   border: 2px solid #757575;
   margin: 0 85px;
-  padding-top: 26px;
+  padding: 26px 10px 10px 10px; 
   text-align: center;
   border-radius: 9px;
   background-color: #191919;
@@ -808,15 +929,20 @@ nav ul li a:hover {
   font-size: 13px;
   text-align: center;
   color: #b8b8b8;
-  padding: 0 338px;
+  max-width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 .clear-margin {
   margin-right: 0 !important;
 }
 .content-main p {
   margin-bottom: 0 !important;
-  color: #b8b8b8;
-  font-weight: bold;
+  color: #dddddd;
   opacity: 0.6;
 }
 .yt-banner {
@@ -827,9 +953,8 @@ nav ul li a:hover {
 /* .item-info-bottom-banner {
   width: 200px !important;
 } */
-.content_generate_contructor_left {
-  width: 416px;
-  height: 251px;
+.content_generate_contructor_left_p {
+  width: 400px;
   /* border: 1.5px solid white; */
   --all: 0px;
   --b: white;
@@ -837,7 +962,7 @@ nav ul li a:hover {
   /* width:200px;
   height:150px; */
   display: inline-block;
-  margin: 10px;
+  /* margin: 10px; */
   border: 4px solid var(--b);
   background: linear-gradient(
         45deg,
@@ -893,7 +1018,7 @@ nav ul li a:hover {
     rgba(255, 255, 255, 0) -3%,
     #000 93%
   );
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 .content_purpose_advantaged_overlay2 {
@@ -936,4 +1061,47 @@ nav ul li a:hover {
 }
 .img-pop {
   position: relative;
+}
+.insta_responsive{
+  display: none;
+  margin: 0 auto;
+}
+.twitter_insta{
+   margin: 30px 0 !important
+}
+.content_astronaut{
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+}
+#background-video_astronaut{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.carousel-item{
+  text-align: center;
+}
+.chat{
+  display: none;
+}
+.launch{
+  margin-top: 38px;
+}
+.launch2{
+  margin-top: 41px;
+  display: none;
+}
+.content_generate_contructor_right_item2_span{
+  color: #c8c8c8; 
+  font-weight: bold;
+  font-size: 12px
+}
+.launch_location_responsive{
+  display:none
 }
