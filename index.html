@@ -117,59 +117,8 @@
           </nav>
           <div class="content-main-responsive">
             <div class="row m-0 w-100">
-              <div class="col-6">
-                <!-- <marquee direction="up" height="100px" scrollamount="3">
-                  <p>
-                    
-                  </p>
-                  <p>2.500.000</p>
-                  <p>Holder</p>
-                  <p>Total Liquidity</p>
-                  <p>
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                  </p>
-                  <p>2.500.000</p>
-                  <p>Holder</p>
-                  <p>Total Liquidity</p>
-                  <p>
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                  </p>
-                  <p>2.500.000</p>
-                  <p>Holder</p>
-                  <p>Total Liquidity</p>
-                  <p>
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                  </p>
-                  <p>2.500.000</p>
-                  <p>Holder</p>
-                  <p>Total Liquidity</p>
-                  <p>
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                  </p>
-                  <p>2.500.000</p>
-                  <p>Holder</p>
-                  <p>Total Liquidity</p>
-                </marquee> -->
-
-                <pre>
-                  This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-                    This is a sample scrolling text that has scrolls in the
-                    upper direction.
-
-                </pre>
+              <div class="col-6 related">
+                <div id="app2"></div>
                 <img
                   src="./assets/images/aboard1x.png"
                   width="100%"
@@ -791,7 +740,7 @@
       </div>
       <!-- -------content-astronaut -->
       <div class="content_astronaut">
-        <video autoplay muted loop id="background-video_astronaut video2">
+        <video autoplay muted height="auto" loop id="background-video_astronaut video2">
           <source
             src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
             type="video/mp4"
@@ -905,7 +854,7 @@
                       alt="..."
                     />
                     <h3 style="color: #e1e1e1; margin: 0">ADAM</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                    <p style="color: #b0b0b0; margin-bottom: 40px; min-height: 54px;">
                       Pilot Commander
                     </p>
                   </div>
@@ -1187,6 +1136,24 @@
     });
 
     typewriter
+      .typeString("HelFirst stage – S-IC <br/>")
+      .typeString("Length	81.5 ft (24.8 m)")
+      .typeString("Diameter	33.0 ft (10.1 m) <br/>")
+      .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
+      .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
+      .typeString("Engines	5 Rocketdyne F-1 <br/>")
+      .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
+      .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
+      .typeString("Fuel	RP-1 / LOX")
+      .start()
+      .deleteAll();
+  
+      var typewriter2 = new Typewriter(app2, {
+      loop: true,
+      autoStart: true,
+    });
+
+    typewriter2
       .typeString("HelFirst stage – S-IC <br/>")
       .typeString("Length	81.5 ft (24.8 m)")
       .typeString("Diameter	33.0 ft (10.1 m) <br/>")

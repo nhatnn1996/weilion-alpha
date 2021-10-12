@@ -125,7 +125,7 @@ nav ul li a {
   bottom: 0;
 }
 .content-main-responsive-item p {
-  font-size: 5px;
+  font-size: 7px;
   letter-spacing: 0.25px;
   color: #b8b8b8;
 }
@@ -170,6 +170,14 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 480px) {
+  .content_purpose_advantaged {
+    padding: 0px 20px;
+    overflow: hidden;
+  }
+
+  .content_generate_contructor_left {
+    text-align: center;
+  }
   .launch_location_responsive {
     display: flex !important;
   }
@@ -191,14 +199,14 @@ nav ul li a {
     display: none;
   }
   .content_generate_contructor_left p {
-    padding: 36px !important;
-    width: 336px !important;
+    padding: 20px !important;
+    width: 300px !important;
   }
   .chat1 {
-    display: none;
+    display: block;
   }
   .chat {
-    display: block !important;
+    display: none !important;
   }
   .iframe_res {
     width: 150px !important;
@@ -210,6 +218,7 @@ nav ul li a {
   .content_astronaut {
     height: auto !important;
     width: auto !important;
+    /* border: 1px solid #000000; */
   }
   .insta_pc {
     display: none;
@@ -319,11 +328,10 @@ nav ul li a {
     display: block !important;
   }
   .btn_W-Comunication {
-    font-size: 9px !important;
-    width: 100% !important;
+    font-size: 12px !important;
     line-height: 1px !important;
     letter-spacing: 0.18px !important;
-    padding: 15px;
+    padding: 10px 25px;
   }
   .content-astronaut {
     height: 157px !important;
@@ -744,13 +752,12 @@ marquee {
   text-align: center;
 }
 .btn_W-Comunication {
-  width: 320px;
-  padding: 7px;
   background-color: #191919;
   border: 1px solid white;
   border-radius: 6px;
   color: white;
   font-size: 13px;
+  padding: 10px 50px;
 }
 .content_W-Comunication_item .icon {
   margin: 51px 15px 49px 15px;
@@ -925,13 +932,21 @@ marquee {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.swiper-slide{
+  align-self: stretch;
+  flex-grow: 1;
+}
 .content_W_Team_responsive_border {
   border: 2px solid #757575;
-  /* margin: 0 85px; */
   padding: 26px 10px 10px 10px;
   text-align: center;
   border-radius: 9px;
   background-color: #191919;
+  flex: 1
+}
+.swiper .swiper-wrapper{
+  align-items: stretch;
+  height: 100%;
 }
 .content_W_Team_responsive {
   display: none;
@@ -1088,6 +1103,7 @@ marquee {
   width: 100%;
   height: 100%;
   background-color: #191919;
+  margin-bottom: -1px;
 }
 #background-video_astronaut {
   width: 100%;
@@ -1177,6 +1193,7 @@ marquee {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  height: auto;
 }
 
 #app {
@@ -1189,7 +1206,7 @@ marquee {
   color: #f1f1f1;
 }
 
-.overplay{
+.overplay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1201,4 +1218,22 @@ marquee {
 video {
   pointer-events: none;
   width: 100%;
+}
+#app2 .Typewriter__wrapper {
+  color: #f1f1f1;
+  font-size: 7px;
+}
+.related{
+  position: relative;
+}
+#app2{
+  position: absolute;
+  bottom: 100%
+}
+
+.chat1 {
+  display: none;
+}
+.chat {
+  display: block !important;
 }
