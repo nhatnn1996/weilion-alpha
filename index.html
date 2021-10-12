@@ -1,121 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS only -->
-  <link rel="stylesheet" type="text/css" href="Landing.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container-main">
-    <div class="main">
-      <video autoplay muted loop id="background-video">
-        <source src="./assets/videos/background_video2.mp4" type="video/mp4">
-      </video>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">WEILION</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <!-- <span class="navbar-toggler-icon"></span> -->
-              <img src="./assets/images/dot.PNG" width="40px" height="40px" />
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav text-light text-center">
-                <li>
-                  <p class="navbar-toggle navbar-toggle-mb text-right" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-times icon-close"></i>
+  <body>
+    <div class="container-main">
+      <div class="main">
+        <video autoplay muted="" loop id="background-video">
+          <source
+            src="./assets/videos/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <!-- <div class="overplay"></div> -->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">WEILION</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="./assets/images/dot.PNG" width="40px" height="40px" />
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-light text-center">
+                  <li>
+                    <p
+                      class="navbar-toggle navbar-toggle-mb text-right"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavDropdown"
+                      aria-controls="navbarNavDropdown"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <i class="fas fa-times icon-close"></i>
+                    </p>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="fw-bold-poiter nav-link active text-light"
+                      aria-current="page"
+                      href="#"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
+                      href="#content_generate"
+                      >WEILION</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fw-bold-poiter" href="#team"
+                      >TEAM</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
+                      href="#roadmap"
+                      >ROADMAP</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
+                      href="#content_W_Orbit"
+                      >ORBIT</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
+                      href="#content_W-Comunication"
+                      >COMMUNICATION</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="content-main-responsive">
+            <div class="row m-0 w-100">
+              <div class="col-6">
+                <!-- <marquee direction="up" height="100px" scrollamount="3">
+                  <p>
+                    
                   </p>
-                </li>
-                <li class="nav-item">
-                  <a class="fw-bold-poiter nav-link active text-light" aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light fw-bold-poiter" href="#content_generate">WEILION</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light fw-bold-poiter" href="#team">TEAM</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light fw-bold-poiter" href="#roadmap">ROADMAP</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light fw-bold-poiter" href="#content_W_Orbit">ORBIT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light fw-bold-poiter" href="#content_W-Comunication">COMMUNICATION</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="content-main-responsive">
-          <div class="row m-0 w-100">
-            <div class="col-6">
-              <marquee direction="up" height="100px" scrollamount="3">
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                </marquee>
-              <img src="./assets/images/aboard1x.png" width="100%" height="185px" />
-            </div>
-            <div class="col-6">
-              <div class="content-main-responsive-item">
-                <div class="row">
-                  <div class="col-6">
-                    <p class="p_number">2.500.000</p>
-                    <p>Holder</p>
-                    <p class="p_number">2.500.000</p>
-                    <p>Holder</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="p_number">2.500.000</p>
-                    <p>Holder</p>
-                    <p class="p_number">2.500.000</p>
-                    <p>Holder</p>
+                  <p>2.500.000</p>
+                  <p>Holder</p>
+                  <p>Total Liquidity</p>
+                  <p>
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                  </p>
+                  <p>2.500.000</p>
+                  <p>Holder</p>
+                  <p>Total Liquidity</p>
+                  <p>
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                  </p>
+                  <p>2.500.000</p>
+                  <p>Holder</p>
+                  <p>Total Liquidity</p>
+                  <p>
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                  </p>
+                  <p>2.500.000</p>
+                  <p>Holder</p>
+                  <p>Total Liquidity</p>
+                  <p>
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                  </p>
+                  <p>2.500.000</p>
+                  <p>Holder</p>
+                  <p>Total Liquidity</p>
+                </marquee> -->
+
+                <pre>
+                  This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+                    This is a sample scrolling text that has scrolls in the
+                    upper direction.
+
+                </pre>
+                <img
+                  src="./assets/images/aboard1x.png"
+                  width="100%"
+                  height="185px"
+                />
+              </div>
+              <div class="col-6">
+                <div class="content-main-responsive-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="p_number">2.500.000</p>
+                      <p>Holder</p>
+                      <p class="p_number">2.500.000</p>
+                      <p>Holder</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="p_number">2.500.000</p>
+                      <p>Holder</p>
+                      <p class="p_number">2.500.000</p>
+                      <p>Holder</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="content-main-responsive-item_video">
-                <!-- <iframe class="iframe_res" width="457" height="215" src="https://www.youtube.com/embed/iH5_Wsx2e2w?autoplay=1"
+                <div class="content-main-responsive-item_video">
+                  <!-- <iframe class="iframe_res" width="457" height="215" src="https://www.youtube.com/embed/iH5_Wsx2e2w?autoplay=1"
                 title="YouTube video player" frameborder="0" allowfullscreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> -->
-                <video width="150px" height="100%" autoplay loop>
-                  <source src="./assets/videos/background_video2.mp4" type="video/mp4">
-                </video>
+                  <video width="150px" height="100%" autoplay loop>
+                    <source
+                      src="./assets/videos/demo.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
               </div>
-            </div>
 
-            <!-- <div class="col-6">
+              <!-- <div class="col-6">
                 <div class="row text-center">
                   <div class="col-6 pl-0">
                     <p
@@ -226,209 +317,291 @@
                   </div>
                 </div>
               </div> -->
+            </div>
           </div>
-        </div>
-        <div class="content-main container">
-          <div class="align-items-end d-flex title-banner-bottom">
-            <div class="item-info-bottom-banner item-info-bottom-banner-chart">
-              <marquee direction="up" height="100px" scrollamount="3">
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                <p>This is a sample scrolling text that has scrolls in the upper direction.</p>
-                <p>2.500.000</p>
-                <p>Holder</p>
-                <p>Total Liquidity</p>
-                </marquee>
-              <img width="270px" src="./assets/images/aboard1x.png"/>
-            </div>
-            <div class="item-info-bottom-banner">
-              <p>2.500.000</p>
-              <p>Holder</p>
-            </div>
-            <div class="item-info-bottom-banner">
-              <p>$ 1.000.310.427</p>
-              <p>Total Liquidity</p>
-            </div>
-            <div class="item-info-bottom-banner">
-              <p>10.000.000</p>
-              <p>Burned</p>
-            </div>
-            <div class="item-info-bottom-banner">
-              <p>$ 730.244.000.014</p>
-              <p>Market Cap</p>
-            </div>
-            <div class="item-info-bottom-banner">
-              <div class="yt-banner" class="img-pop">
-                <video width="300px" height="200px" autoplay loop>
-                  <source src="./assets/videos/background_video2.mp4" type="video/mp4">
-                </video>
+          <div class="content-main container">
+            <div class="align-items-end d-flex title-banner-bottom">
+              <div
+                class="item-info-bottom-banner item-info-bottom-banner-chart"
+              >
+                <div id="app" style="text-align: left"></div>
 
+                <img width="270px" src="./assets/images/aboard1x.png" />
               </div>
-
+              <div class="item-info-bottom-banner">
+                <p>2.500.000</p>
+                <p>Holder</p>
+              </div>
+              <div class="item-info-bottom-banner">
+                <p>$ 1.000.310.427</p>
+                <p>Total Liquidity</p>
+              </div>
+              <div class="item-info-bottom-banner">
+                <p>10.000.000</p>
+                <p>Burned</p>
+              </div>
+              <div class="item-info-bottom-banner">
+                <p>$ 730.244.000.014</p>
+                <p>Market Cap</p>
+              </div>
+              <div class="item-info-bottom-banner">
+                <div class="yt-banner" class="img-pop">
+                  <video width="300px" id="video1" height="175px" autoplay loop>
+                    <source
+                      src="./assets/videos/demo.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- <div class="exchange-NFT">
+          <p class="m-0 exchange_style">EXCHANGE</p>
+          <p class="fw-bold NFT">NFT</p>
+        </div>
+        <div class="img-ship-radar">
+          <img
+            src="./assets/images/ship-radar.png"
+            width="90px"
+            height="90px"
+          />
+        </div> -->
+        <!-- <div class="img-radar">
+          <img src="./assets/images/radar.png" width="524px" height="821px" />
+        </div> -->
+        <div class="img-moon">
+          <img src="./assets/images/moon.png" width="70px" height="70px" />
+        </div>
+        <div class="shadow-overlay"></div>
       </div>
-      <div class="exchange-NFT">
-        <p class="m-0 exchange_style">EXCHANGE</p>
-        <p class="fw-bold NFT">NFT</p>
-      </div>
-      <div class="img-ship-radar">
-        <img src="./assets/images/ship-radar.png" width="90px" height="90px" />
-      </div>
-      <div class="img-radar">
-        <img src="./assets/images/radar.png" width="524px" height="821px" />
-      </div>
-      <div class="img-moon">
-        <img src="./assets/images/moon.png" width="70px" height="70px" />
-      </div>
-      <div class="shadow-overlay"></div>
-    </div>
 
-    <div class="content_generate" id="content_generate">
-      <div class="container pt-2 wellion-container">
-        <h1 class="content_generate_title">WHAT A WEILION</h1>
-        <div class="row">
-          <div class="col-12 col-md-6 pt-5">
-            <div class="content_generate_contructor_left">
-              <p class="content_generate_contructor_left_p" style="--bottom-right: 20px">
-                WEILION is a space station that develops a space exploration
-                ecosystem that generates reactor-powered WEI energy (remixETH)
-                with space-sourced Binance Smart Chain (BSC) matter. Is the
-                first energy for the foundation of cosmic exploration and
-                cosmological theories. All real-time roadmaps are logically
-                arranged according to theories from the ground up, quantum
-                physics, quantum chemistry, quantum field theory, quantum
-                technology, and quantum information science .
-              </p>
-              <!-- <img class="launch" src="./assets/images/launch.png" width="500px" height="74px"/> -->
-            </div>
-            <div class="row launch_location" style="margin: 50px 0 0 4rem;">
-              <div class="col-1 p-0">
-                <img src="./assets/images/iconlaunch2.png" width="25px" height="25px" />
+      <div class="content_generate" id="content_generate">
+        <div class="container pt-2 wellion-container">
+          <h1 class="content_generate_title">WHAT A WEILION</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 pt-5">
+              <div class="content_generate_contructor_left">
+                <p
+                  class="content_generate_contructor_left_p"
+                  style="--bottom-right: 20px"
+                >
+                  WEILION is a space station that develops a space exploration
+                  ecosystem that generates reactor-powered WEI energy (remixETH)
+                  with space-sourced Binance Smart Chain (BSC) matter. Is the
+                  first energy for the foundation of cosmic exploration and
+                  cosmological theories. All real-time roadmaps are logically
+                  arranged according to theories from the ground up, quantum
+                  physics, quantum chemistry, quantum field theory, quantum
+                  technology, and quantum information science .
+                </p>
+                <!-- <img class="launch" src="./assets/images/launch.png" width="500px" height="74px"/> -->
               </div>
-              <div class="col-11 p-0" style="text-align: left;">
-                <p style="margin-bottom: 0;font-weight: bold; color:#e1e1e1;">Launch location</p>
-                <span style="color: #b0b0b0; font-size: 12px;">Kennedy Space Center Launch Complex 39,</span><br />
-                <span style="color: #b0b0b0; font-size: 12px;">Gagarin's Start, Baikonur Cosmodrome Site 81 on map BSC
-                  Weilion</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="row m-0">
-              <div class="col-12 col-md-6 d-flex justify-content-center pt-5 ">
-                <div class="content_generate_contructor_right">
-                  <div class="content_generate_contructor_right_item">
-                    <h1 class="generate">GENERATE</h1>
-                    <p class="upto">UP TO</p>
-                    <h1 class="one">1</h1>
-                    <p class="billion">Billion</p>
-                    <p class="energy">of energy (token)</p>
-                  </div>
+              <div class="row launch_location" style="margin: 50px 0 0 4rem">
+                <div class="col-1 p-0">
+                  <img
+                    src="./assets/images/iconlaunch2.png"
+                    width="25px"
+                    height="25px"
+                  />
+                </div>
+                <div class="col-11 p-0" style="text-align: left">
+                  <p
+                    style="margin-bottom: 0; font-weight: bold; color: #e1e1e1"
+                  >
+                    Launch location
+                  </p>
+                  <span style="color: #b0b0b0; font-size: 12px"
+                    >Kennedy Space Center Launch Complex 39,</span
+                  ><br />
+                  <span style="color: #b0b0b0; font-size: 12px"
+                    >Gagarin's Start, Baikonur Cosmodrome Site 81 on map BSC
+                    Weilion</span
+                  >
                 </div>
               </div>
-              <div class="col-12 col-md-6 pt-5 box-card-right">
-                <div class="row text-center content_generate_margin">
-                  <div class="col-4 col-md-12">
-                    <div class="content_generate_contructor_right_orbital pb-4">
-                      <img src="./assets/images/Cal.PNG" width="40px" height="40px" />
-                      <div class="content_generate_contructor_right_item2">
-                        <span class="content_generate_contructor_right_item2_span">Launch date</span><br />
-                        <span class="may122021" style="color: #b8b8b8;font-size: 12px;">May 12 2021</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4 col-md-12">
-                    <div class="content_generate_contructor_right_orbital pb-4">
-                      <img src="./assets/images/clock.PNG" width="40px" height="40px" />
-                      <div class="content_generate_contructor_right_item2">
-                        <span class="content_generate_contructor_right_item2_span">Orbital speed</span><br />
-                        <span style="color: #b8b8b8;font-size: 12px;">7.6 km/s</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4 col-md-12">
-                    <div class="content_generate_contructor_right_orbital pb-4">
-                      <img src="./assets/images/altitute.PNG" width="40px" height="40px" />
-                      <div class="content_generate_contructor_right_item2">
-                        <span class="content_generate_contructor_right_item2_span">Orbital altitude</span><br />
-                        <span style="color: #b8b8b8;font-size: 12px;">480 km</span>
-                      </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row m-0">
+                <div class="col-12 col-md-6 d-flex justify-content-center pt-5">
+                  <div class="content_generate_contructor_right">
+                    <div class="content_generate_contructor_right_item">
+                      <h1 class="generate">GENERATE</h1>
+                      <p class="upto">UP TO</p>
+                      <h1 class="one">1</h1>
+                      <p class="billion">Billion</p>
+                      <p class="energy">of energy (token)</p>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="content_generate_cost">
-                      <h1 class="m-0" style="font-weight: bold; color: #e1e1e1">
-                        COST
-                      </h1>
-                      <span class="million" style="font-size: 32px; color: #ff6d00">10 Million</span>
-                      <span class="wellion" style="color: #b8b8b8">Weilion Tokens</span>
+                <div class="col-12 col-md-6 pt-5 box-card-right">
+                  <div class="row text-center content_generate_margin">
+                    <div class="col-4 col-md-12">
+                      <div
+                        class="content_generate_contructor_right_orbital pb-4"
+                      >
+                        <img
+                          src="./assets/images/Cal.PNG"
+                          width="40px"
+                          height="40px"
+                        />
+                        <div class="content_generate_contructor_right_item2">
+                          <span
+                            class="content_generate_contructor_right_item2_span"
+                            >Launch date</span
+                          ><br />
+                          <span
+                            class="may122021"
+                            style="color: #b8b8b8; font-size: 12px"
+                            >May 12 2021</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <hr class="hr-range" style="
+                    <div class="col-4 col-md-12">
+                      <div
+                        class="content_generate_contructor_right_orbital pb-4"
+                      >
+                        <img
+                          src="./assets/images/clock.PNG"
+                          width="40px"
+                          height="40px"
+                        />
+                        <div class="content_generate_contructor_right_item2">
+                          <span
+                            class="content_generate_contructor_right_item2_span"
+                            >Orbital speed</span
+                          ><br />
+                          <span style="color: #b8b8b8; font-size: 12px"
+                            >7.6 km/s</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-12">
+                      <div
+                        class="content_generate_contructor_right_orbital pb-4"
+                      >
+                        <img
+                          src="./assets/images/altitute.PNG"
+                          width="40px"
+                          height="40px"
+                        />
+                        <div class="content_generate_contructor_right_item2">
+                          <span
+                            class="content_generate_contructor_right_item2_span"
+                            >Orbital altitude</span
+                          ><br />
+                          <span style="color: #b8b8b8; font-size: 12px"
+                            >480 km</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="content_generate_cost">
+                        <h1
+                          class="m-0"
+                          style="font-weight: bold; color: #e1e1e1"
+                        >
+                          COST
+                        </h1>
+                        <span
+                          class="million"
+                          style="font-size: 32px; color: #ff6d00"
+                          >10 Million</span
+                        >
+                        <span class="wellion" style="color: #b8b8b8"
+                          >Weilion Tokens</span
+                        >
+                      </div>
+                      <hr
+                        class="hr-range"
+                        style="
                           color: #ff6d00;
                           opacity: 1;
                           height: 1px;
                           margin: 0;
-                        " />
-                    <hr class="hr-range" style="
+                        "
+                      />
+                      <hr
+                        class="hr-range"
+                        style="
                           color: #ff6d00;
                           opacity: 1;
                           height: 1px;
                           margin: 8px 0 0 0;
-                        " />
-                  </div>
-                  <div class="col-12">
-                    <div class="content_generate_manufacturer">
-                      <div class="row m-0">
-                        <div class="col-4 p-0"><span>Manufacturers</span></div>
-                        <div class="col-8 p-0"><span>: Weilion Energy</span></div>
-                      </div>
-                      <div class="row m-0">
-                        <div class="col-4 p-0"><span>Platform</span></div>
-                        <div class="col-8 p-0"><span>: BSC (BEP20) Energy</span></div>
-                      </div>
-                      <div class="row m-0">
-                        <div class="col-4 p-0"><span>Smart Contrast</span></div>
-                        <div class="col-8 p-0"><span>: Unchangeable</span></div>
-                      </div>
-                      <div class="row m-0">
-                        <div class="col-4 p-0"><span>Concept</span></div>
-                        <div class="col-8 p-0"><span>: NASA, EU Space Agency, SpaceX.</span></div>
-                      </div>
-                      <!-- <span>Manufacturers : Weilion Energy</span><br />
+                        "
+                      />
+                    </div>
+                    <div class="col-12">
+                      <div class="content_generate_manufacturer">
+                        <div class="row m-0">
+                          <div class="col-4 p-0">
+                            <span>Manufacturers</span>
+                          </div>
+                          <div class="col-8 p-0">
+                            <span>: Weilion Energy</span>
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-4 p-0"><span>Platform</span></div>
+                          <div class="col-8 p-0">
+                            <span>: BSC (BEP20) Energy</span>
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-4 p-0">
+                            <span>Smart Contrast</span>
+                          </div>
+                          <div class="col-8 p-0">
+                            <span>: Unchangeable</span>
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-4 p-0"><span>Concept</span></div>
+                          <div class="col-8 p-0">
+                            <span>: NASA, EU Space Agency, SpaceX.</span>
+                          </div>
+                        </div>
+                        <!-- <span>Manufacturers : Weilion Energy</span><br />
                       <span>Platform : BSC (BEP20) Energy</span><br />
                       <span>Smart Contrast: Unchangeable</span><br />
                       <span>Concept : NASA, EU Space Agency, SpaceX.</span><br /> -->
-
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 mt-5 launch_location_responsive " style="padding: 0 18px;">
-                    <img style="transform: translateX(-4px);" src="./assets/images/iconlaunch2.png" width="25px" height="25px" />
-                    <div>
-                      <p style="margin-bottom: 0;font-weight: bold; color:#e1e1e1;">Launch location</p>
-                      <span style="color: #b0b0b0; font-size: 12px;">Kennedy Space Center Launch Complex
-                        39,</span><br />
-                      <span style="color: #b0b0b0; font-size: 12px;">Gagarin's Start, Baikonur Cosmodrome Site 81 on map
-                        BSC Weilion</span>
+                    <div
+                      class="col-12 mt-5 launch_location_responsive"
+                      style="padding: 0 18px"
+                    >
+                      <img
+                        style="transform: translateX(-4px)"
+                        src="./assets/images/iconlaunch2.png"
+                        width="25px"
+                        height="25px"
+                      />
+                      <div>
+                        <p
+                          style="
+                            margin-bottom: 0;
+                            font-weight: bold;
+                            color: #e1e1e1;
+                          "
+                        >
+                          Launch location
+                        </p>
+                        <span style="color: #b0b0b0; font-size: 12px"
+                          >Kennedy Space Center Launch Complex 39,</span
+                        ><br />
+                        <span style="color: #b0b0b0; font-size: 12px"
+                          >Gagarin's Start, Baikonur Cosmodrome Site 81 on map
+                          BSC Weilion</span
+                        >
+                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -436,396 +609,620 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ////// -->
-    <div class="content_purpose_advantaged">
-      <div class="content_purpose_advantaged_overlay"></div>
-      <div class="container py-5 advantaged-container">
-        <div class="row">
-          <div class="
+      <!-- ////// -->
+      <div class="content_purpose_advantaged">
+        <div class="content_purpose_advantaged_overlay"></div>
+        <div class="container py-5 advantaged-container">
+          <div class="row">
+            <div
+              class="
                 col-12 col-md-3
                 d-flex
                 align-items-center
                 justify-content-center
-              ">
-            <div class="content_purpose_advantaged_item">
-              <span class="title">Total length of the truss</span>
-              <div class="content_purpose_advantaged_black">
-                <span style="padding-right: 91px" class="content_purpose_advantaged_none">Total length of the
-                  truss</span>
-                <span>108.4 m</span>
+              "
+            >
+              <div class="content_purpose_advantaged_item">
+                <span class="title">Total length of the truss</span>
+                <div class="content_purpose_advantaged_black">
+                  <span
+                    style="padding-right: 91px"
+                    class="content_purpose_advantaged_none"
+                    >Total length of the truss</span
+                  >
+                  <span>108.4 m</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-12 col-md-3
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="content_purpose_advantaged_item">
+                <span class="title">Weight (400 tons)</span>
+                <div class="content_purpose_advantaged_black">
+                  <span
+                    class="content_purpose_advantaged_none"
+                    style="padding-right: 80px"
+                    >Weight (400 tons)</span
+                  >
+                  <span>-400.000 kg</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-12 col-md-3
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="content_purpose_advantaged_item">
+                <span class="title">The pressurized volume</span>
+                <div class="content_purpose_advantaged_black">
+                  <span class="content_purpose_advantaged_none"
+                    >The pressurized volume</span
+                  >
+                  <span>~1000 m3</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-12 col-md-3
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="content_purpose_advantaged_item">
+                <span class="title">Length of all modules</span>
+                <div class="content_purpose_advantaged_black">
+                  <span
+                    class="content_purpose_advantaged_none"
+                    style="padding-right: 128px"
+                    >Length of all modules</span
+                  >
+                  <span>74 m</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="
-                col-12 col-md-3
-                d-flex
-                align-items-center
-                justify-content-center
-              ">
-            <div class="content_purpose_advantaged_item">
-              <span class="title">Weight (400 tons)</span>
-              <div class="content_purpose_advantaged_black">
-                <span class="content_purpose_advantaged_none" style="padding-right: 80px">Weight (400 tons)</span>
-                <span>-400.000 kg</span>
-              </div>
-            </div>
-          </div>
-          <div class="
-                col-12 col-md-3
-                d-flex
-                align-items-center
-                justify-content-center
-              ">
-            <div class="content_purpose_advantaged_item">
-              <span class="title">The pressurized volume</span>
-              <div class="content_purpose_advantaged_black">
-                <span class="content_purpose_advantaged_none">The pressurized volume</span>
-                <span>~1000 m3</span>
-              </div>
-            </div>
-          </div>
-          <div class="
-                col-12 col-md-3
-                d-flex
-                align-items-center
-                justify-content-center
-              ">
-            <div class="content_purpose_advantaged_item">
-              <span class="title">Length of all modules</span>
-              <div class="content_purpose_advantaged_black">
-                <span class="content_purpose_advantaged_none" style="padding-right: 128px">Length of all modules</span>
-                <span>74 m</span>
+          <div class="row">
+            <div
+              class="col-12 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="content_purpose_advantaged_tabs"
+                style="--bottom-right: 20px"
+              >
+                <div>
+                  <nav>
+                    <div class="nav nav-tabs mt-2" id="nav-tab" role="tablist">
+                      <button
+                        class="nav-link active btn-purpose"
+                        id="nav-home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-home"
+                        aria-selected="true"
+                      >
+                        Purpose
+                      </button>
+                      <button
+                        class="nav-link btn-purpose"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                      >
+                        Advantaged
+                      </button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div
+                      class="tab-pane tabs-purpose fade show active"
+                      id="nav-home"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab"
+                    >
+                      <p>
+                        - Explore the endless universe and the most advanced
+                        technologies.
+                      </p>
+                      <p>- Expanding matrix Mission</p>
+                      <p>
+                        - Create a space-cosmic matrix through an infinitely
+                        expanding blockchain platform
+                      </p>
+                      <p>
+                        - Simulate and test logical hypotheses from the WEILION
+                        energy source into space through the Blockchain
+                        ecosystem
+                      </p>
+                      <p>
+                        - Convert discoveries to NFT assets and create a common
+                        playing field
+                      </p>
+                      <p>- Search for life on planets in space.</p>
+                    </div>
+                    <div
+                      class="tab-pane tabs-purpose fade"
+                      id="nav-profile"
+                      role="tabpanel"
+                      aria-labelledby="nav-profile-tab"
+                    >
+                      <p>- Breakthrough idea</p>
+                      <p>- Web and app development</p>
+                      <p>
+                        - NFT: Resources in space are endless, they are
+                        converted to NFT form for each known or unknown name.
+                      </p>
+                      <p>
+                        - Sophia (AI) on station and on the ground manages % of
+                        supply burned from the source for rocket or satellite
+                        launches through station powering strategies as well as
+                        research and testing of Space ship is not fixed. She
+                        runs the WEI power operation including the sustaining
+                        power system for the WEILION station and develops
+                        spacecrafts to explore NFT objects and extraterrestrial
+                        life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <div class="content_purpose_advantaged_tabs" style="--bottom-right: 20px">
-              <div>
-                <nav>
-                  <div class="nav nav-tabs mt-2" id="nav-tab" role="tablist">
-                    <button class="nav-link active btn-purpose" id="nav-home-tab" data-bs-toggle="tab"
-                      data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                      Purpose
-                    </button>
-                    <button class="nav-link btn-purpose" id="nav-profile-tab" data-bs-toggle="tab"
-                      data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                      aria-selected="false">
-                      Advantaged
-                    </button>
+        <div class="content_purpose_advantaged_overlay2"></div>
+      </div>
+      <!-- -------content-astronaut -->
+      <div class="content_astronaut">
+        <video autoplay muted loop id="background-video_astronaut video2">
+          <source
+            src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- ---------content-Wteam -->
+      <div class="content_W_Team">
+        <div class="container py-5">
+          <h1 class="text-center text-light title-team">W-TEAM</h1>
+          <div class="content_W_Team_content d-flex justify-content-center">
+            <div class="row">
+              <div class="col-6 p-0">
+                <div class="content_W_Team_content_item">
+                  <img
+                    src="./assets/images/adam1.png"
+                    width="360px"
+                    height="500px"
+                  />
+                  <div class="text_item text_item1 line-content">
+                    <h2 class="text-white">ADAM</h2>
+                    <p style="color: #b8b8b8">Pilot Commander</p>
                   </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane tabs-purpose fade show active" id="nav-home" role="tabpanel"
-                    aria-labelledby="nav-home-tab">
-                    <p>
-                      - Explore the endless universe and the most advanced
-                      technologies.
-                    </p>
-                    <p>- Expanding matrix Mission</p>
-                    <p>
-                      - Create a space-cosmic matrix through an infinitely
-                      expanding blockchain platform
-                    </p>
-                    <p>
-                      - Simulate and test logical hypotheses from the WEILION
-                      energy source into space through the Blockchain ecosystem
-                    </p>
-                    <p>
-                      - Convert discoveries to NFT assets and create a common
-                      playing field
-                    </p>
-                    <p>
-                      - Search for life on planets in space.
-                    </p>
-                  </div>
-                  <div class="tab-pane tabs-purpose fade" id="nav-profile" role="tabpanel"
-                    aria-labelledby="nav-profile-tab">
-                    <p>- Breakthrough idea</p>
-                    <p>- Web and app development</p>
-                    <p>
-                      - NFT: Resources in space are endless, they are converted
-                      to NFT form for each known or unknown name.
-                    </p>
-                    <p>
-                      - Sophia (AI) on station and on the ground manages % of
-                      supply burned from the source for rocket or satellite
-                      launches through station powering strategies as well as
-                      research and testing of Space ship is not fixed. She runs
-                      the WEI power operation including the sustaining power
-                      system for the WEILION station and develops spacecrafts to
-                      explore NFT objects and extraterrestrial life.
-                    </p>
-                  </div>
-
                 </div>
               </div>
+              <div class="col-6 p-0">
+                <div class="content_W_Team_content_item">
+                  <img
+                    src="./assets/images/alien1.png"
+                    width="360px"
+                    height="500px"
+                  />
+                  <div class="text_item text_item2 line-content">
+                    <h2 class="text-white">ALIEN</h2>
+                    <p style="color: #b8b8b8">
+                      Science pilot Payload commander
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              content_W_Team_content
+              d-flex
+              justify-content-center
+              pb-5
+              mb-5
+            "
+          >
+            <div class="row">
+              <div class="col-4 p-0">
+                <div class="content_W_Team_content_item line-content2">
+                  <img
+                    src="./assets/images/selena1.png"
+                    class="img-content-team"
+                    width="360px"
+                    height="500px"
+                  />
+                  <div class="text_item item-trans">
+                    <h2 class="text-white">SLENA</h2>
+                    <p style="color: #b8b8b8">
+                      Mission Specialist Space Object Speciallist
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <div class="content_W_Team_content_item line-content4">
+                  <img
+                    src="./assets/images/golka1.png"
+                    class="img-content-team"
+                    width="360px"
+                    height="500px"
+                  />
+                  <div class="text_item item-trans">
+                    <h2 class="text-white">GOLKA</h2>
+                    <p style="color: #b8b8b8">
+                      Command Module Pilot Flight Engineer
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <div class="content_W_Team_content_item line-content3">
+                  <img
+                    src="./assets/images/kevinnguyen1.png"
+                    class="img-content-team"
+                    width="360px"
+                    height="500px"
+                  />
+                  <div class="text_item item-trans">
+                    <h2 class="text-white">KEVIN NGUYEN</h2>
+                    <p style="color: #b8b8b8">
+                      Command a spaceship from the ground
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_W_Team_responsive mt-3 mb-5">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-next">
+                  <div class="content_W_Team_responsive_border">
+                    <img
+                      src="./assets/images/adam2.png"
+                      class="d-block img_responsive"
+                      alt="..."
+                    />
+                    <h3 style="color: #e1e1e1; margin: 0">ADAM</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                      Pilot Commander
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content_W_Team_responsive_border">
+                    <img
+                      src="./assets/images/alien2.png"
+                      class="d-block img_responsive"
+                      alt="..."
+                    />
+                    <h3 style="color: #e1e1e1; margin: 0">ALIEN</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                      Science pilot Payload commander
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content_W_Team_responsive_border">
+                    <img
+                      src="./assets/images/selena2.png"
+                      class="d-block img_responsive"
+                      alt="..."
+                    />
+                    <h3 style="color: #e1e1e1; margin: 0">SELENA</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                      Mission Specialist Space Object Speciallist
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content_W_Team_responsive_border">
+                    <img
+                      src="./assets/images/golka2.png"
+                      class="d-block img_responsive"
+                      alt="..."
+                    />
+                    <h3 style="color: #e1e1e1; margin: 0">GOLKA</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                      SCommand Module Pilot Flight Engineer
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content_W_Team_responsive_border">
+                    <img
+                      src="./assets/images/kevinnguyen2.png"
+                      class="d-block img_responsive"
+                      alt="..."
+                    />
+                    <h3 style="color: #e1e1e1; margin: 0">KEVIN NGUYEN</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 40px">
+                      Command a spaceship from the ground
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="p_style"
+            style="font-size: 13px; text-align: center; color: #b8b8b8"
+          >
+            In addition to the 04 astronauts on the Weilion energy space
+            station, we also have members in the European space agency: Science
+            Pilot (Russia), Load Commander (Russia-US), International Mission
+            Specialist International (Russia), Commanding spaceship from the
+            ground (USA).
+          </p>
+        </div>
+      </div>
+      <!-- ---------content-W RoadMap -->
+      <div class="content_W_Roadmap" id="roadmap">
+        <div class="content_W_Roadmap_item_overlay"></div>
+        <div class="container">
+          <div class="content_W_Roadmap_item">
+            <h1 class="text-center" style="color: white; padding: 80px 0">
+              W-ROADMAP
+            </h1>
+            <h4 class="text-center">STATION 1</h4>
+            <div class="content_W_Roadmap_item_2">
+              <ul>
+                <li>
+                  <p>Processing</p>
+                </li>
+                <li>
+                  <p>Processing</p>
+                </li>
+                <li>
+                  <p>Processing</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="content_purpose_advantaged_overlay2"></div>
-    </div>
-    <!-- -------content-astronaut -->
-    <div class="content_astronaut">
-      <video autoplay muted loop id="background-video_astronaut">
-        <source src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4" type="video/mp4">
-      </video>
-    </div>
-    <!-- ---------content-Wteam -->
-    <div class="content_W_Team">
-      <div class="container py-5">
-        <h1 class="text-center text-light title-team">W-TEAM</h1>
-        <div class="content_W_Team_content d-flex justify-content-center">
-          <div class="row">
-            <div class="col-6 p-0">
-              <div class="content_W_Team_content_item">
-                <img src="./assets/images/adam1.png" width="360px" height="500px" />
-                <div class="text_item text_item1 line-content">
-                  <h2 class="text-white">ADAM</h2>
-                  <p style="color: #b8b8b8">Pilot Commander</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 p-0">
-              <div class="content_W_Team_content_item">
-                <img src="./assets/images/alien1.png" width="360px" height="500px" />
-                <div class="text_item text_item2 line-content">
-                  <h2 class="text-white">ALIEN</h2>
-                  <p style="color: #b8b8b8">
-                    Science pilot Payload commander
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="
-            content_W_Team_content
-            d-flex
-            justify-content-center
-            pb-5
-            mb-5
-          ">
-          <div class="row">
-            <div class="col-4 p-0">
-              <div class="content_W_Team_content_item line-content2">
-                <img src="./assets/images/selena1.png" class="img-content-team" width="360px" height="500px" />
-                <div class="text_item item-trans">
-                  <h2 class="text-white">SLENA</h2>
-                  <p style="color: #b8b8b8;">
-                    Mission Specialist Space Object Speciallist
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 p-0">
-              <div class="content_W_Team_content_item line-content4">
-                <img src="./assets/images/golka1.png" class="img-content-team" width="360px" height="500px" />
-                <div class="text_item item-trans">
-                  <h2 class="text-white">GOLKA</h2>
-                  <p style="color: #b8b8b8;">
-                    Command Module Pilot Flight Engineer
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 p-0">
-              <div class="content_W_Team_content_item line-content3">
-                <img src="./assets/images/kevinnguyen1.png" class="img-content-team" width="360px" height="500px" />
-                <div class="text_item item-trans">
-                  <h2 class="text-white">KEVIN NGUYEN</h2>
-                  <p style="color: #b8b8b8;">
-                    Command a spaceship from the ground
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content_W_Team_responsive mt-3 mb-5">
-          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+      <!-- ---------content-Worbit-->
+      <div class="content_W_Orbit" id="content_W_Orbit">
+        <div class="container">
+          <h1 class="text-center py-5">W - ORBIT</h1>
+          <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="content_W_Team_responsive_border">
-                  <img src="./assets/images/adam2.png" class="d-block img_responsive" alt="..." />
-                  <h3 style="color: #e1e1e1; margin: 0">ADAM</h3>
-                  <p style="color: #b0b0b0; margin-bottom: 40px">
-                    Pilot Commander
-                  </p>
-                </div>
+                <img
+                  src="./assets/images/space-ship.png"
+                  height="570px"
+                  class="imgCarousel"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <div class="content_W_Team_responsive_border">
-                  <img src="./assets/images/alien2.png" class="d-block img_responsive" alt="..." />
-                  <h3 style="color: #e1e1e1; margin: 0">ALIEN</h3>
-                  <p style="color: #b0b0b0; margin-bottom: 40px">
-                    Science pilot Payload commander
-                  </p>
-                </div>
+                <img
+                  src="./assets/images/space-ship.png"
+                  height="570px"
+                  class="imgCarousel"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <div class="content_W_Team_responsive_border">
-                  <img src="./assets/images/selena2.png" class="d-block img_responsive" alt="..." />
-                  <h3 style="color: #e1e1e1; margin: 0">SELENA</h3>
-                  <p style="color: #b0b0b0; margin-bottom: 40px">
-                    Mission Specialist Space Object Speciallist
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="content_W_Team_responsive_border">
-                  <img src="./assets/images/golka2.png" class="d-block img_responsive" alt="..." />
-                  <h3 style="color: #e1e1e1; margin: 0">GOLKA</h3>
-                  <p style="color: #b0b0b0; margin-bottom: 40px">
-                    SCommand Module Pilot Flight Engineer
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="content_W_Team_responsive_border">
-                  <img src="./assets/images/kevinnguyen2.png" class="d-block img_responsive" alt="..." />
-                  <h3 style="color: #e1e1e1; margin: 0">KEVIN NGUYEN</h3>
-                  <p style="color: #b0b0b0; margin-bottom: 40px">
-                    Command a spaceship from the ground
-                  </p>
-                </div>
+                <img
+                  src="./assets/images/space-ship.png"
+                  height="570px"
+                  class="imgCarousel"
+                  alt="..."
+                />
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <p class="p_style" style="font-size: 13px; text-align: center; color: #b8b8b8">
-          In addition to the 04 astronauts on the Weilion energy space
-          station, we also have members in the European space agency: Science
-          Pilot (Russia), Load Commander (Russia-US), International Mission
-          Specialist International (Russia), Commanding spaceship from the
-          ground (USA).
-        </p>
       </div>
     </div>
-    <!-- ---------content-W RoadMap -->
-    <div class="content_W_Roadmap" id="roadmap">
-      <div class="content_W_Roadmap_item_overlay"></div>
-      <div class="container">
-        <div class="content_W_Roadmap_item">
-          <h1 class="text-center" style="color: white; padding: 80px 0">
-            W-ROADMAP
-          </h1>
-          <h4 class="text-center">STATION 1</h4>
-          <div class="content_W_Roadmap_item_2">
-            <ul>
-              <li>
-                <p>Processing</p>
-              </li>
-              <li>
-                <p>Processing</p>
-              </li>
-              <li>
-                <p>Processing</p>
-              </li>
-            </ul>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/iH5_Wsx2e2w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
     </div>
-    <!-- ---------content-Worbit-->
-    <div class="content_W_Orbit" id="content_W_Orbit">
-      <div class="container">
-        <h1 class="text-center py-5">W - ORBIT</h1>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/space-ship.png" height="570px" class="imgCarousel" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/space-ship.png" height="570px" class="imgCarousel" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/space-ship.png" height="570px" class="imgCarousel" alt="..." />
-            </div>
+  </body>
+  <footer>
+    <div class="content_concept">
+      <!-- <div class="container"> -->
+      <div class="content_concept_item">
+        <span class="Concept">Concept by</span>
+        <div class="row logo_space" style="margin-top: 50px">
+          <div class="col-4">
+            <img
+              class="binance"
+              src="./assets/images/binance.svg"
+              width="100px"
+              height="27px"
+            />
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-4 d-flex justify-content-center align-items-center">
+            <img
+              class="logo_nasa"
+              src="./assets/images/nasalogo.png"
+              width="50px"
+              height="26px"
+            />
+            <img
+              class="nasa"
+              src="./assets/images/nasax3.png"
+              width="50px"
+              height="15px"
+            />
+          </div>
+          <div class="col-4">
+            <img
+              class="space_x"
+              src="./assets/images/spaceX.svg"
+              width="126px"
+              height="27px"
+            />
+          </div>
         </div>
       </div>
+      <!-- </div> -->
     </div>
-  </div>
-  <!-- modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/iH5_Wsx2e2w" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<footer>
-  <div class="content_concept">
-    <!-- <div class="container"> -->
-    <div class="content_concept_item">
-      <span class="Concept">Concept by</span>
-      <div class="row logo_space" style="margin-top: 50px;">
-        <div class="col-4">
-          <img class="binance" src="./assets/images/binance.svg" width="100px" height="27px" />
-        </div>
-        <div class="col-4 d-flex justify-content-center align-items-center">
-          <img class="logo_nasa" src="./assets/images/nasalogo.png" width="50px" height="26px" />
-          <img class="nasa" src="./assets/images/nasax3.png" width="50px" height="15px" />
-        </div>
-        <div class="col-4">
-          <img class="space_x" src="./assets/images/spaceX.svg" width="126px" height="27px" />
-        </div>
-      </div>
-    </div>
-    <!-- </div> -->
-  </div>
-  <div class="content_W-Comunication">
-    <!-- <div class="container"> -->
-    <div class="content_W-Comunication_item" id="content_W-Comunication">
-      <h1 class="text-center COMUNICATION">W-COMUNICATION</h1>
-      <div class="twitter_insta">
-        <img class="insta_pc" src="./assets/images/Capture111.PNG" width="150px" height="71px" />
-        <img class="insta_responsive" src="./assets/images/twiterInstagram.PNG" width="100px" height="50px" />
-        <!-- <i class="fab fa-twitter icon"></i>
+    <div class="content_W-Comunication">
+      <!-- <div class="container"> -->
+      <div class="content_W-Comunication_item" id="content_W-Comunication">
+        <h1 class="text-center COMUNICATION">W-COMUNICATION</h1>
+        <div class="twitter_insta">
+          <img
+            class="insta_pc"
+            src="./assets/images/Capture111.PNG"
+            width="150px"
+            height="71px"
+          />
+          <img
+            class="insta_responsive"
+            src="./assets/images/twiterInstagram.PNG"
+            width="100px"
+            height="50px"
+          />
+          <!-- <i class="fab fa-twitter icon"></i>
           <i class="fab fa-telegram icon"></i> -->
+        </div>
+        <button class="btn_W-Comunication">
+          <span class="chat1">JOIN IN TELEGRAM</span
+          ><span class="chat">JOIN GROUP TELEGRAM CHAT</span>
+        </button>
       </div>
-      <button class="btn_W-Comunication"><span class="chat1">JOIN IN TELEGRAM</span><span class="chat">JOIN GROUP
-          TELEGRAM CHAT</span></button>
+      <!-- </div> -->
     </div>
-    <!-- </div> -->
-  </div>
-</footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"
+  ></script>
 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var app = document.getElementById("app");
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      autoStart: true,
+    });
+
+    typewriter
+      .typeString("HelFirst stage – S-IC <br/>")
+      .typeString("Length	81.5 ft (24.8 m)")
+      .typeString("Diameter	33.0 ft (10.1 m) <br/>")
+      .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
+      .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
+      .typeString("Engines	5 Rocketdyne F-1 <br/>")
+      .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
+      .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
+      .typeString("Fuel	RP-1 / LOX")
+      .start()
+      .deleteAll();
+
+    // window.onload = function (e) {
+    //   vid1 = document.getElementById("video1");
+    //   vid1.disablePictureInPicture = true;
+    //   vid22 = document.getElementById("video2");
+    //   console.log(vid22);
+    //   vid22.disablePictureInPicture = true;
+    // };
+
+    // .typeString("Second stage – S-II")
+    // .typeString("Diameter	33.0 ft (10.1 m)")
+    // .typeString("Empty mass	88,400 lb (40,100 kg)[note 3]")
+    // .typeString("Gross mass	1,093,900 lb (496,200 kg)[note 3]")
+    // .typeString("Engines	5 Rocketdyne J-2")
+    // .typeString("Thrust	1,155,800 lbf (5,141 kN) vacuum")
+    // .typeString("Specific impulse	421 seconds (4.13 km/s) vacuum")
+    // .typeString("Fuel	LH2 / LOX")
+    // .typeString("Third stage – S-IVB")
+    // .typeString("Length	61.6 ft (18.8 m)")
+    // .typeString("Diameter	21.7 ft (6.6 m)")
+    // .typeString("Gross mass	271,000 lb (123,000 kg)[note 4]")
+    // .typeString("Engines	1 Rocketdyne J-2")
+    // .typeString("Thrust	232,250 lbf (1,033.1 kN) vacuum")
+    // .typeString("Burn time	165 + 335 seconds (2 burns)")
+    // .typeString("Specific impulse	421 seconds (4.13 km/s) vacuum")
+    // .typeString("Fuel	LH2 / LOX")
+  </script>
 </html>
