@@ -57,6 +57,7 @@ body {
   position: relative;
   height: 800px;
   width: 100%;
+  /* background: black; */
 }
 .img-radar {
   position: absolute;
@@ -160,13 +161,32 @@ nav ul li a {
     margin-left: 0rem !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .content_generate_contructor_left {
+    margin-left: 0rem !important;
+  }
+  .content_generate_contructor_left {
+    text-align: center;
+  }
+  .content_W_Team_responsive {
+    display: block !important;
+  }
+  .box-card-right {
+    padding: 0 !important;
+  }
+  .box-card-right .content_generate_margin {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  .box-card-right .content_generate_cost_right {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .content_W_Team_content_item {
     display: none !important;
-  }
-  .content_W_Team_responsive {
-    display: block !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -175,9 +195,6 @@ nav ul li a {
     overflow: hidden;
   }
 
-  .content_generate_contructor_left {
-    text-align: center;
-  }
   .launch_location_responsive {
     display: flex !important;
   }
@@ -192,9 +209,7 @@ nav ul li a {
   .launch2 {
     display: block !important;
   }
-  .box-card-right {
-    padding: 0 !important;
-  }
+
   .launch {
     display: none;
   }
@@ -932,7 +947,7 @@ marquee {
   font-weight: bold;
   letter-spacing: 2px;
 }
-.swiper-slide{
+.swiper-slide {
   align-self: stretch;
   flex-grow: 1;
 }
@@ -942,9 +957,9 @@ marquee {
   text-align: center;
   border-radius: 9px;
   background-color: #191919;
-  flex: 1
+  flex: 1;
 }
-.swiper .swiper-wrapper{
+.swiper .swiper-wrapper {
   align-items: stretch;
   height: 100%;
 }
@@ -1196,7 +1211,6 @@ marquee {
   height: auto;
 }
 
-
 #app {
   font-size: 12px;
   font-weight: 300;
@@ -1207,9 +1221,9 @@ marquee {
   color: #f1f1f1;
 }
 
-#app .Typewriter__wrapper{
+#app .Typewriter__wrapper {
   color: #f1f1f1;
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .overplay {
@@ -1229,14 +1243,13 @@ video {
   color: #f1f1f1;
   font-size: 7px;
   opacity: 0.5;
-  
 }
-.related{
+.related {
   position: relative;
 }
-#app2{
+#app2 {
   position: absolute;
-  bottom: 100%
+  bottom: 100%;
 }
 
 .chat1 {
