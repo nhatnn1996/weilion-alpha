@@ -1196,6 +1196,7 @@ marquee {
   height: auto;
 }
 
+
 #app {
   font-size: 12px;
   font-weight: 300;
@@ -1204,6 +1205,11 @@ marquee {
   letter-spacing: normal;
   text-align: left;
   color: #f1f1f1;
+}
+
+#app .Typewriter__wrapper{
+  color: #f1f1f1;
+  opacity: 0.5
 }
 
 .overplay {
@@ -1222,6 +1228,8 @@ video {
 #app2 .Typewriter__wrapper {
   color: #f1f1f1;
   font-size: 7px;
+  opacity: 0.5;
+  
 }
 .related{
   position: relative;
