@@ -34,10 +34,7 @@
       <div class="main">
         <div class="background-video" style="background: black"></div>
         <video playsinline autoplay loop id="background-video">
-          <source
-            src="./assets/videos/demo.mp4"
-            type="video/mp4"
-          />
+          <source src="./assets/videos/demo.mp4" type="video/mp4" />
         </video>
         <!-- <div class="overplay"></div> -->
         <div class="container">
@@ -112,6 +109,13 @@
                       >COMMUNICATION</a
                     >
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
+                      href="#content_W-Comunication"
+                      >MARKET</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -148,10 +152,7 @@
                 title="YouTube video player" frameborder="0" allowfullscreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> -->
                   <video playsinline width="150px" height="100%" autoplay loop>
-                    <source
-                      src="./assets/videos/demo.mp4"
-                      type="video/mp4"
-                    />
+                    <source src="./assets/videos/demo.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -296,11 +297,15 @@
               </div>
               <div class="item-info-bottom-banner">
                 <div class="yt-banner" class="img-pop">
-                  <video playsinline loop width="300px" id="video1" height="175px" autoplay >
-                    <source
-                      src="./assets/videos/demo.mp4"
-                      type="video/mp4"
-                    />
+                  <video
+                    playsinline
+                    loop
+                    width="300px"
+                    id="video1"
+                    height="175px"
+                    autoplay
+                  >
+                    <source src="./assets/videos/demo.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -741,7 +746,14 @@
       </div>
       <!-- -------content-astronaut -->
       <div class="content_astronaut">
-        <video playsinline autoplay muted height="auto" loop id="background-video_astronaut video2">
+        <video
+          playsinline
+          autoplay
+          muted
+          height="auto"
+          loop
+          id="background-video_astronaut video2"
+        >
           <source
             src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
             type="video/mp4"
@@ -762,8 +774,15 @@
                     height="500px"
                   />
                   <div class="text_item text_item1 line-content">
-                    <h2 class="text-white">ADAM</h2>
-                    <p style="color: #b8b8b8">Pilot Commander</p>
+                    <div class="none-hover">
+                      <h2 class="text-white">Adam Do</h2>
+                      <p style="color: #b8b8b8">Pilot Commander (CEO)</p>
+                    </div>
+                    <div class="hover">
+                      Financial/Investment Advisor. Experienced in
+                      CryptoCurrency, Social Media, Game Online MMORPG, Passion
+                      for the blockchain space.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -855,7 +874,13 @@
                       alt="..."
                     />
                     <h3 style="color: #e1e1e1; margin: 0">ADAM</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 40px; min-height: 54px;">
+                    <p
+                      style="
+                        color: #b0b0b0;
+                        margin-bottom: 40px;
+                        min-height: 54px;
+                      "
+                    >
                       Pilot Commander
                     </p>
                   </div>
@@ -1059,18 +1084,8 @@
             />
           </div>
           <div class="col-4 d-flex justify-content-center align-items-center">
-            <img
-              class="logo_nasa"
-              src="./assets/images/nasalogo.png"
-              width="50px"
-              height="26px"
-            />
-            <img
-              class="nasa"
-              src="./assets/images/nasax3.png"
-              width="50px"
-              height="15px"
-            />
+            <img class="logo_nasa" src="./assets/images/nasalogo.png" />
+            <img class="nasa" src="./assets/images/nasax3.png" />
           </div>
           <div class="col-4">
             <img
@@ -1148,8 +1163,8 @@
       .typeString("Fuel	RP-1 / LOX")
       .start()
       .deleteAll();
-  
-      var typewriter2 = new Typewriter(app2, {
+
+    var typewriter2 = new Typewriter(app2, {
       loop: true,
       autoStart: true,
     });
