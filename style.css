@@ -284,8 +284,7 @@ nav ul li a {
     color: #e1e1e1;
     margin-bottom: 50px;
   }
-  .icon {
-  }
+
   .COMUNICATION {
     font-size: 22px;
     letter-spacing: 0.36px;
@@ -752,6 +751,7 @@ marquee {
 }
 .Concept {
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 .logo_space {
   margin-top: 50px;
