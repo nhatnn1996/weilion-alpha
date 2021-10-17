@@ -54,7 +54,7 @@
                 <img src="./assets/images/dot.PNG" width="40px" height="40px" />
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav text-light text-center">
+                <ul class="navbar-nav text-light text-center blink-text-menu">
                   <li>
                     <p
                       class="navbar-toggle navbar-toggle-mb text-right"
@@ -334,7 +334,10 @@
 
       <div class="content_generate" id="content_generate">
         <div class="container pt-2 wellion-container">
-          <h1 class="content_generate_title">WHAT A WEILION</h1>
+          <div class="title-weilion">
+            <h1 class="content_generate_title btn-shine">WHAT A WEILION</h1>
+          </div>
+
           <div class="row">
             <div class="col-12 col-lg-6 pt-5">
               <div class="content_generate_contructor_left">
@@ -1187,8 +1190,8 @@
       .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
       .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
       .typeString("Fuel	RP-1 / LOX")
-      .start()
-      .deleteAll();
+      .start();
+    // .deleteAll();
 
     var typewriter2 = new Typewriter(app2, {
       loop: true,
@@ -1208,4 +1211,6 @@
       .start();
     // .deleteAll();
   </script>
+
+  <script src="./index.js"></script>
 </html>
