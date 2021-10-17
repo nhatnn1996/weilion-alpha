@@ -825,18 +825,20 @@ marquee {
 .text_item h2 {
   font-weight: bold;
 }
-.text_item1 {
+.text_item1,
+.text_item2 {
   width: 100%;
   top: calc(100% - 53px);
 }
-.text_item .hover {
+.content_W_Team_content_item .hover {
   display: none;
+  color: white;
 }
 
-.text_item :hover .hover {
+.content_W_Team_content_item:hover .hover {
   display: block;
 }
-.text_item :hover .no-hover {
+.content_W_Team_content_item:hover .none-hover {
   display: none;
 }
 .text_item2 {
