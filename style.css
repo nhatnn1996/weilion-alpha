@@ -370,6 +370,7 @@ nav ul li a {
     margin-bottom: 0;
     padding-top: 0px;
     padding-bottom: 10px;
+    background: transparent;
   }
   .content_purpose_advantaged .nav-tabs .nav-link:hover {
     border-bottom: none;
@@ -966,7 +967,7 @@ marquee {
   bottom: 64px;
   background-image: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) -5%,
+    rgba(0, 0, 0, 0) -5%,
     #191919 84%
   );
   height: 200px;
@@ -1090,7 +1091,7 @@ marquee {
   top: -1px;
   background-image: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0) -3%,
+    rgba(0, 0, 0, 0) -3%,
     #000 93%
   );
   height: 80px;
@@ -1101,7 +1102,7 @@ marquee {
   bottom: -1px;
   background-image: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) -3%,
+    rgba(0, 0, 0, 0) -3%,
     #000 93%
   );
   height: 100px;
