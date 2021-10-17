@@ -1027,9 +1027,9 @@ marquee {
   justify-content: center;
   align-items: center;
 }
-/* .item-info-bottom-banner {
-  width: 200px !important;
-} */
+.item-info-bottom-banner {
+  max-width: 312px !important;
+}
 .content_generate_contructor_left_p {
   width: 400px;
   /* border: 1.5px solid white; */
