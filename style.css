@@ -989,6 +989,7 @@ marquee {
   border-radius: 9px;
   background-color: #191919;
   flex: 1;
+  min-height: 358px;
 }
 .swiper .swiper-wrapper {
   align-items: stretch;
