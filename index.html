@@ -357,7 +357,7 @@
                 <!-- <img class="launch" src="./assets/images/launch.png" width="500px" height="74px"/> -->
               </div>
               <div class="row launch_location" style="margin: 50px 0 0 4rem">
-                <div class="col-1 p-0">
+                <div class="col-1 p-0" style="margin-right: -12px">
                   <img
                     src="./assets/images/iconlaunch2.png"
                     width="25px"
@@ -673,7 +673,7 @@
                         aria-controls="nav-home"
                         aria-selected="true"
                       >
-                        Purpose
+                        PURPOSE
                       </button>
                       <button
                         class="nav-link btn-purpose"
@@ -685,7 +685,7 @@
                         aria-controls="nav-profile"
                         aria-selected="false"
                       >
-                        Advantaged
+                        ADVANTAGED
                       </button>
                     </div>
                   </nav>
@@ -1101,27 +1101,39 @@
   <footer>
     <div class="content_concept">
       <!-- <div class="container"> -->
+      <video playsinline autoplay loop class="background-video">
+        <source src="./assets/videos/concept.mp4" type="video/mp4" />
+      </video>
       <div class="content_concept_item">
         <span class="Concept">Concept by</span>
         <div class="row logo_space" style="margin-top: 50px">
-          <div class="col-4">
+          <div class="col-6 col-md-3">
             <img
               class="binance"
               src="./assets/images/binance.svg"
-              width="100px"
-              height="27px"
             />
           </div>
-          <div class="col-4 d-flex justify-content-center align-items-center">
+          <div
+            class="
+              col-6 col-md-3
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
             <img class="logo_nasa" src="./assets/images/nasalogo.png" />
             <img class="nasa" src="./assets/images/nasax3.png" />
           </div>
-          <div class="col-4">
+          <div class="col-6 col-md-3">
             <img
               class="space_x"
               src="./assets/images/spaceX.svg"
-              width="126px"
-              height="27px"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              class="space_x"
+              src="./assets/images/dfinity.png"
             />
           </div>
         </div>
@@ -1156,6 +1168,10 @@
       <!-- </div> -->
     </div>
   </footer>
+  <audio autoplay>
+    <source src="./assets/audio//audio.m4a" />
+  </audio>
+
   <!-- JavaScript Bundle with Popper -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

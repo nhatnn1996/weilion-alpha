@@ -191,12 +191,27 @@ nav ul li a {
   }
 }
 
+.logo_space {
+}
+
 @media screen and (max-width: 1200px) {
   .content_W_Team_content_item {
     display: none !important;
   }
 }
 @media screen and (max-width: 480px) {
+  .content_concept img {
+    height: 70px !important;
+    object-fit: contain !important;
+    width: 100%;
+  }
+  .content_concept img.logo_nasa,
+  .content_concept img.nasa {
+    width: 100px !important;
+  }
+  .binance {
+    width: 100%;
+  }
   .content_purpose_advantaged {
     padding: 0px 20px;
     overflow: hidden;
@@ -252,20 +267,14 @@ nav ul li a {
     height: 383px !important;
     background-color: #0d0d0d !important;
   }
-  .content_concept {
-    background-color: #0d0d0d !important;
-  }
   .content_concept_item {
-    margin: 0 !important;
+    margin: 0 20px !important;
   }
   .logo_space {
     margin-top: 20px !important;
     margin-right: 0 !important;
   }
-  .binance {
-    width: 80px !important;
-    height: 36px !important;
-  }
+
   .nasa {
     width: 48.5px;
     height: 10px;
@@ -581,6 +590,7 @@ nav ul li a:hover {
   position: relative;
   background-color: #191919;
   height: 600px;
+  height: 400;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   background-image: url("./assets/images/bg-purpose.png");
@@ -676,8 +686,13 @@ marquee {
   display: none;
 }
 .content_purpose_advantaged_black span {
-  color: #b2b2b2;
+  color: #b8b8b8;
   font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.38;
+  letter-spacing: 0.72px;
 }
 .content_purpose_advantaged_item {
   text-align: center;
@@ -685,7 +700,6 @@ marquee {
 .content_purpose_advantaged_item .title {
   font-size: 13px;
   color: #696969;
-  font-weight: bold;
 }
 #nav-tab {
   border-bottom: none;
@@ -727,12 +741,19 @@ marquee {
 }
 /* footer */
 .content_concept {
-  background-color: #191919;
-  height: 270px;
+  /* background-color: #191919; */
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #696969;
+  /* border-bottom: 1px solid #696969; */
+  position: relative;
+  width: 100%;
+  transform: scale(1.006);
+}
+.content_concept img {
+  height: 20px;
+  object-fit: contain;
 }
 .tabs-purpose {
   color: white;
@@ -748,9 +769,13 @@ marquee {
 .content_concept_item {
   text-align: center;
   color: #696969;
+  width: 80%;
+  max-width: 1100px;
 }
 .Concept {
-  margin-bottom: 50px;
+  color: white;
+  display: block;
+  margin-bottom: 100px;
   font-size: 2rem;
 }
 .logo_space {
@@ -759,8 +784,6 @@ marquee {
 }
 .logo_space .binance,
 .space_x {
-  height: 50px;
-  width: 100%;
   object-fit: contain;
 }
 
@@ -1396,4 +1419,3 @@ video {
   opacity: 1;
   transform: translateX(0);
 }
-
