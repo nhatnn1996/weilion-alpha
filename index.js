@@ -68,7 +68,7 @@ const update_screen = () => {
     // window.scrollTo(0, sourceContainer.scrollHeight);
     // update_cursor
     sourceElement.textContent += cursorChar;
-    console.log(sourceElement.textContent);
+    // console.log(sourceElement.textContent);
     // update access message
   }
 

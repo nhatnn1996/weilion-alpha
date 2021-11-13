@@ -83,6 +83,11 @@ body {
 .wrap-roadmap .left {
   position: relative;
 }
+.wrap-roadmap .center {
+    position: relative;
+    z-index: 1;
+  }
+  
 
 .wrap-roadmap .left .content {
   width: 24.5rem;
@@ -154,7 +159,7 @@ body {
   border-top: solid 1px #333;
   position: absolute;
   left: 0;
-  margin-left: 40px;
+  z-index: 0;
 }
 .wrap-roadmap .right img {
   width: 10.875rem;
