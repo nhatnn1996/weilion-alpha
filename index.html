@@ -123,7 +123,10 @@
           <div class="content-main-responsive">
             <div class="row m-0 w-100">
               <div class="col-6 related">
-                <div id="app2"></div>
+                <!-- <div id="app2"></div> -->
+                <!-- <div id="container app2">
+                  <p id="source"></p>
+                </div> -->
                 <img
                   src="./assets/images/aboard1x.png"
                   width="100%"
@@ -156,118 +159,6 @@
                   </video>
                 </div>
               </div>
-
-              <!-- <div class="col-6">
-                <div class="row text-center">
-                  <div class="col-6 pl-0">
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 11px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      2.500.000
-                    </p>
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 11px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      Holder
-                    </p>
-                    <br />
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 11px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      10.000.000
-                    </p>
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 11px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      Burned
-                    </p>
-                  </div>
-                  <div class="col-6 pl-0">
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 12px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      $ 1.000.310
-                    </p>
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 10px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      Total Liquidity
-                    </p>
-                    <br />
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 12px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      $ 730.244.0
-                    </p>
-                    <p
-                      style="
-                        color: #e1e1e1;
-                        margin-bottom: 0;
-                        font-size: 12px;
-                        font-weight: bold;
-                        opacity: 0.8;
-                      "
-                    >
-                      Market Cap
-                    </p>
-                  </div>
-                </div>
-                <div class="row" style="margin-top: 80px">
-                  <div class="col-12">
-                    <iframe
-                      width="160"
-                      height="100"
-                      src="https://www.youtube.com/embed/iH5_Wsx2e2w"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
           <div class="content-main container">
@@ -275,7 +166,10 @@
               <div
                 class="item-info-bottom-banner item-info-bottom-banner-chart"
               >
-                <div id="app" style="text-align: left"></div>
+                <!-- <div id="app" style="text-align: left"></div> -->
+                <div id="container ">
+                  <p id="source"></p>
+                </div>
 
                 <img width="270px" src="./assets/images/aboard1x.png" />
               </div>
@@ -563,6 +457,7 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -748,9 +643,8 @@
         <div class="content_purpose_advantaged_overlay2"></div>
       </div>
       <!-- -------content-astronaut -->
-      <div class="content_astronaut">
+      <div class="content_astronaut" id="content_astronaut">
         <video
-          playsinline
           autoplay
           muted
           height="auto"
@@ -1101,17 +995,20 @@
   <footer>
     <div class="content_concept">
       <!-- <div class="container"> -->
-      <video playsinline autoplay loop class="background-video">
+      <video
+        playsinline
+        autoplay
+        loop
+        id="background-video_concept"
+        class="background-video"
+      >
         <source src="./assets/videos/concept.mp4" type="video/mp4" />
       </video>
       <div class="content_concept_item">
         <span class="Concept">Concept by</span>
         <div class="row logo_space" style="margin-top: 50px">
           <div class="col-6 col-md-3">
-            <img
-              class="binance"
-              src="./assets/images/binance.svg"
-            />
+            <img class="binance" src="./assets/images/binance.svg" />
           </div>
           <div
             class="
@@ -1125,16 +1022,10 @@
             <img class="nasa" src="./assets/images/nasax3.png" />
           </div>
           <div class="col-6 col-md-3">
-            <img
-              class="space_x"
-              src="./assets/images/spaceX.svg"
-            />
+            <img class="space_x" src="./assets/images/spaceX.svg" />
           </div>
           <div class="col-6 col-md-3">
-            <img
-              class="space_x"
-              src="./assets/images/dfinity.png"
-            />
+            <img class="space_x" src="./assets/images/dfinity.png" />
           </div>
         </div>
       </div>
@@ -1189,42 +1080,42 @@
         clickable: true,
       },
     });
-    var app = document.getElementById("app");
+    // var app = document.getElementById("app");
 
-    var typewriter = new Typewriter(app, {
-      loop: true,
-      autoStart: true,
-    });
+    // var typewriter = new Typewriter(app, {
+    //   loop: true,
+    //   autoStart: true,
+    // });
 
-    typewriter
-      .typeString("HelFirst stage – S-IC <br/>")
-      .typeString("Length	81.5 ft (24.8 m)")
-      .typeString("Diameter	33.0 ft (10.1 m) <br/>")
-      .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
-      .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
-      .typeString("Engines	5 Rocketdyne F-1 <br/>")
-      .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
-      .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
-      .typeString("Fuel	RP-1 / LOX")
-      .start();
-    // .deleteAll();
+    // typewriter
+    //   .typeString("HelFirst stage – S-IC <br/>")
+    //   .typeString("Length	81.5 ft (24.8 m)")
+    //   .typeString("Diameter	33.0 ft (10.1 m) <br/>")
+    //   .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
+    //   .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
+    //   .typeString("Engines	5 Rocketdyne F-1 <br/>")
+    //   .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
+    //   .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
+    //   .typeString("Fuel	RP-1 / LOX")
+    //   .start();
+    // // .deleteAll();
 
-    var typewriter2 = new Typewriter(app2, {
-      loop: true,
-      autoStart: true,
-    });
+    // var typewriter2 = new Typewriter(app2, {
+    //   loop: true,
+    //   autoStart: true,
+    // });
 
-    typewriter2
-      .typeString("HelFirst stage – S-IC <br/>")
-      .typeString("Length	81.5 ft (24.8 m)")
-      .typeString("Diameter	33.0 ft (10.1 m) <br/>")
-      .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
-      .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
-      .typeString("Engines	5 Rocketdyne F-1 <br/>")
-      .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
-      .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
-      .typeString("Fuel	RP-1 / LOX")
-      .start();
+    // typewriter2
+    //   .typeString("HelFirst stage – S-IC <br/>")
+    //   .typeString("Length	81.5 ft (24.8 m)")
+    //   .typeString("Diameter	33.0 ft (10.1 m) <br/>")
+    //   .typeString("Empty mass	287,000 lb (130,000 kg) <br/>")
+    //   .typeString("Gross mass	5,040,000 lb (2,290,000 kg) <br/>")
+    //   .typeString("Engines	5 Rocketdyne F-1 <br/>")
+    //   .typeString("Thrust	7,891,000 lbf (35,100 kN) sea level<br/>")
+    //   .typeString("Specific impulse	263 seconds (2.58 km/s) sea level <br/>")
+    //   .typeString("Fuel	RP-1 / LOX")
+    //   .start();
     // .deleteAll();
   </script>
 
