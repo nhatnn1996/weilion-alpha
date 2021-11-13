@@ -84,10 +84,9 @@ body {
   position: relative;
 }
 .wrap-roadmap .center {
-    position: relative;
-    z-index: 1;
-  }
-  
+  position: relative;
+  z-index: 1;
+}
 
 .wrap-roadmap .left .content {
   width: 24.5rem;
@@ -165,6 +164,11 @@ body {
   width: 10.875rem;
   margin-left: 10rem;
   margin-top: 1.25rem;
+}
+
+.content_W_Roadmap_item_2 li {
+  font-size: 1.5rem;
+  margin-top: 2.75rem;
 }
 
 @media screen and (min-width: 1920px) {
