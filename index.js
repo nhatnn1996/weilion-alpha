@@ -109,14 +109,21 @@ window.onload = () => {
     update_screen();
   }, 100);
 
-  var figure = $(".video-avatar").hover(hoverVideo, hideVideo);
+  var figure = $(".w-team .item").hover(hoverVideo, hideVideo);
 
   function hoverVideo(e) {
-    e.target.play();
+    const element = e.target;
+    const video = $(element).find(".video-avatar");
+    $(element).toggleClass("active");
+    video.get(0).currentTime = 0;
+    video.get(0).play();
   }
 
   function hideVideo(e) {
-    e.target.pause();
+    const element = e.target;
+    $(element).toggleClass("active");
+    const video = $(element).find(".video-avatar");
+    video.get(0).pause();
   }
 
   var swiper = new Swiper(".mySwiper", {
@@ -144,7 +151,25 @@ window.onload = () => {
       $$(".music-waves span").forEach((span) => {
         span.classList.add("disabled");
       });
-    
+
+      $("#audio").get(0).pause();
+    } else {
+      $$(".music-waves span.disabled").forEach((span) => {
+        span.classList.remove("disabled");
+      });
+      $("#audio").get(0).play();
+    }
+  };
+
+  const btnMobile = $$$("#btn-music-mobile");
+  btnMobile.onclick = function () {
+    isActive = !isActive;
+
+    if (isActive) {
+      $$(".music-waves span").forEach((span) => {
+        span.classList.add("disabled");
+      });
+
       $("#audio").get(0).pause();
     } else {
       $$(".music-waves span.disabled").forEach((span) => {
