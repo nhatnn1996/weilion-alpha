@@ -1539,7 +1539,7 @@ video {
   position: relative;
   background: white;
   height: 100%;
-  width: 2px;
+  width: 3px;
   border-radius: 50px;
   margin: 0 3px;
   animation: animate 1.2s linear infinite;
