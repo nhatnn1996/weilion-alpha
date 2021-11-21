@@ -25,16 +25,16 @@ blinkTextMenuLinks.forEach((link) => {
   });
 });
 
-const content_astronaut = document.getElementById("background-video_concept")
+const content_astronaut = document.getElementById("background-video_concept");
 
 if (content_astronaut) {
-  content_astronaut.volume = 0
-  content_astronaut.play()
+  content_astronaut.volume = 0;
+  content_astronaut.play();
 }
 
 // handle typer
 
-var sourceCode = ""
+var sourceCode = "";
 var sourceContainer, sourceElement, accessMessageElement;
 
 var startIndex = 0;
@@ -46,18 +46,18 @@ var locked = false;
 const CHARS_PER_STROKE = 1;
 const load_source_code = () => {
   var client = new XMLHttpRequest();
-  client.open('GET', './code.txt');
+  client.open("GET", "./code.txt");
   client.onreadystatechange = function () {
     sourceCode = client.responseText;
-  }
+  };
   client.send();
-}
+};
 
 const getElements = () => {
   sourceContainer = document.getElementById("container");
   sourceElement = document.getElementById("source");
-  accessMessageElement = document.getElementById("access-msg")
-}
+  accessMessageElement = document.getElementById("access-msg");
+};
 
 const update_screen = () => {
   if (!locked) {
@@ -71,8 +71,7 @@ const update_screen = () => {
     // console.log(sourceElement.textContent);
     // update access message
   }
-
-}
+};
 
 function update_cursor() {
   var text = sourceElement.textContent;
@@ -88,27 +87,45 @@ function update_cursor() {
 
 const remove_message = () => {
   locked = false;
-  accessMessageElement.removeAttribute('class')
-  sourceContainer.removeAttribute('class')
-}
+  accessMessageElement.removeAttribute("class");
+  sourceContainer.removeAttribute("class");
+};
 
 const init = () => {
-  load_source_code()
-  getElements()
+  load_source_code();
+  getElements();
   window.setTimeout(update_cursor, 500);
-}
+};
 
-init()
+init();
 
 window.onkeydown = (e) => {
-  if (e.key === "Escape")
-    remove_message()
-  else
-    update_screen()
+  if (e.key === "Escape") remove_message();
+  else update_screen();
 };
 
 window.onload = () => {
   setInterval(() => {
-    update_screen()
+    update_screen();
   }, 100);
-}
+
+  var figure = $(".video-avatar").hover(hoverVideo, hideVideo);
+
+  function hoverVideo(e) {
+    e.target.play();
+  }
+
+  function hideVideo(e) {
+    e.target.pause();
+  }
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+};

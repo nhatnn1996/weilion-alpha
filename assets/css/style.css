@@ -66,7 +66,7 @@ body {
   position: relative;
   height: 800px;
   width: 100%;
-  background: #000000;
+  /* background: #000000; */
 }
 .img-radar {
   position: absolute;
@@ -200,8 +200,11 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1200px) {
-  .content_W_Team_content_item {
+  .w-team .w-team-desktop {
     display: none !important;
+  }
+  .content_W_Roadmap {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -776,6 +779,7 @@ marquee {
   color: #696969;
   width: 80%;
   max-width: 1100px;
+  position: relative;
 }
 .Concept {
   color: white;
@@ -835,13 +839,19 @@ marquee {
 }
 .content_W_Team_content_item {
   position: relative;
+  padding: 0px 4rem;
 }
-.content_W_Team_content_item img {
+.content_W_Team_content_item video {
   transition: transform 0.3s ease-in-out;
+  height: 16.5rem;
+  width: 16.5rem;
+  border-radius: 200px;
+  object-fit: cover;
+  cursor: pointer;
 }
-.content_W_Team_content_item img:hover {
+/* .content_W_Team_content_item video:hover {
   transform: scale(0.9);
-}
+} */
 .item-trans {
   transform: translateY(-40px);
   bottom: unset !important;
@@ -1294,7 +1304,7 @@ marquee {
 }
 
 video {
-  pointer-events: none;
+  /* pointer-events: none; */
   width: 100%;
 }
 #app2 .Typewriter__wrapper {

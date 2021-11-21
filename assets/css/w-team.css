@@ -1,0 +1,154 @@
+.w-team {
+  color: white;
+}
+.w-team .title-team {
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.w-team .top {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.25rem;
+}
+
+.w-team .top .item {
+  width: 33rem;
+  position: relative;
+  text-align: center;
+  /* background: red; */
+  border-bottom: 1px solid #696969;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.w-team .top .item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 100%;
+  background: white;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.w-team .top .item .item-trans {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 2rem;
+}
+
+.w-team .top .item .video-avatar {
+  width: 16.5rem;
+  height: 16.5rem;
+  object-fit: cover;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+/* Bottom   */
+
+.w-team .bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+
+.w-team .bottom .item {
+  width: 33rem;
+  position: relative;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 15rem;
+  position: relative;
+}
+
+.w-team .bottom .item .item-trans {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 2rem;
+}
+
+.w-team .bottom .item .video-avatar {
+  width: 16.5rem;
+  height: 16.5rem;
+  object-fit: cover;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.bottom-item::after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  top: 0;
+  background: #696969;
+  z-index: 0;
+}
+.bottom-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 100%;
+  background: white;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.middle-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 100%;
+  background: white;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.middle-item::after {
+  content: "";
+  display: block;
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  bottom: 0;
+  background: #696969;
+  z-index: 0;
+}
+
+.item video {
+  position: relative;
+  z-index: 1;
+}
+
+.item .hover {
+  display: none;
+}
+
+.item .none-hover {
+  display: block;
+}
+
+.item:hover .hover {
+  display: block;
+}
+.item:hover .none-hover {
+  display: none;
+}

@@ -18,7 +18,7 @@ body {
 }
 .wrap-roadmap .main {
   font-size: 1rem;
-  line-height: 1.43;
+  line-height: 1.6;
   font-weight: normal;
   color: #fff;
   border-left: solid 1px #333;
@@ -174,12 +174,12 @@ body {
 @media screen and (min-width: 1920px) {
   html,
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1400px) {
   html,
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
