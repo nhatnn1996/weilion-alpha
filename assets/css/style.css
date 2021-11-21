@@ -1611,3 +1611,8 @@ span:nth-child(7) {
     display: flex;
   }
 }
+
+.mobile-left-header p{
+  color: white;
+  font-size: 1.3rem;
+}
