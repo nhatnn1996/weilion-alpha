@@ -83,6 +83,7 @@
   object-fit: cover;
   border-radius: 200px;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .bottom-item::after {
@@ -159,7 +160,7 @@
   object-fit: cover;
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
 .w-team .item .hover {
@@ -189,6 +190,8 @@
   margin: 0 auto;
   z-index: 1;
   transition: 0.3s ease-in-out;
+  border-radius: 1000px;
+  cursor: pointer;
 }
 
 .w-team .item-wrap:hover {

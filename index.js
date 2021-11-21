@@ -112,14 +112,17 @@ window.onload = () => {
   $(".item-wrap").hover(hoverVideo, hideVideo);
 
   function hoverVideo(e) {
-    const element = e.target;
-    element.currentTime = 0;
-    element.play();
+    const element = e.currentTarget || e.target;
+    const video = $(element).find("video");
+    console.log(video);
+    video.get(0).currentTime = 0;
+    video.get(0).play();
   }
 
   function hideVideo(e) {
-    const element = e.target;
-    $(element).get(0).pause();
+    // const element = e.target;
+    // const video = $(element).find("video").get(0);
+    // video.pause();
   }
 
   var swiper = new Swiper(".mySwiper", {
