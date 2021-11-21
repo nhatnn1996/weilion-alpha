@@ -3,6 +3,11 @@ body {
   font-size: 10px;
   background: #191919;
 }
+@media screen and (max-width: 1200px) {
+  .wrap-roadmap {
+    display: none;
+  }
+}
 .wrap-roadmap {
   display: flex;
 }

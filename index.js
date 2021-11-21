@@ -128,4 +128,7 @@ window.onload = () => {
       clickable: true,
     },
   });
+
+  const video = $("#background-video");
+  video.play();
 };

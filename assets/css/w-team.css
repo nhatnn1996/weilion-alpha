@@ -1,6 +1,9 @@
 .w-team {
   color: white;
 }
+.content_W_Roadmap_item {
+  background: #121212;
+}
 .w-team .title-team {
   font-size: 3rem;
   margin-top: 6rem;
