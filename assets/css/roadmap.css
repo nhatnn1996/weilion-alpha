@@ -52,7 +52,7 @@ body {
 }
 .wrap-roadmap .main .title {
   /* margin: 9px 0; */
-  background: #191919;
+  /* background: #191919; */
   position: absolute;
   top: 0px;
   left: 1.125rem;
@@ -78,10 +78,11 @@ body {
 
 .wrap-roadmap .seconds {
   transform: translateX(40%);
-  background: #191919;
+  /* background: #191919; */
+  background: none;
   border: none;
   border-left: solid 1px #333;
-  border-top: solid 2px #191919;
+  border-top: none;
   margin-top: -2px;
 }
 

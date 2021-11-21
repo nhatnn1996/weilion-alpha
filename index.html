@@ -47,6 +47,12 @@
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand text-light" href="#">WEILION</a>
+              <div class="music-waves mobile" id="btn-music">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -57,7 +63,11 @@
                 aria-label="Toggle navigation"
               >
                 <!-- <span class="navbar-toggler-icon"></span> -->
-                <img src="./assets/images/dot.PNG" width="40px" height="40px" />
+                <img
+                  src="./assets/images/menu.png"
+                  width="40px"
+                  height="40px"
+                />
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-light text-center blink-text-menu">
@@ -82,13 +92,7 @@
                       >HOME</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link text-light fw-bold-poiter"
-                      href="#content_generate"
-                      >WEILION</a
-                    >
-                  </li>
+
                   <li class="nav-item">
                     <a class="nav-link text-light fw-bold-poiter" href="#team"
                       >TEAM</a
@@ -98,8 +102,8 @@
                     <a
                       class="nav-link text-light fw-bold-poiter"
                       href="#roadmap"
-                      >ROADMAP</a
-                    >
+                      >WHITE PAPER
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
@@ -118,9 +122,24 @@
                   <li class="nav-item">
                     <a
                       class="nav-link text-light fw-bold-poiter"
+                      href="#content_generate"
+                      >WEIX
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light fw-bold-poiter"
                       href="#content_W-Comunication"
                       >MARKET</a
                     >
+                  </li>
+                  <li class="nav-item flex-center">
+                    <div class="music-waves desktop" id="btn-music">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -671,10 +690,7 @@
                   loop
                   class="video-avatar"
                 >
-                  <source
-                    src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/videos/1.mp4" type="video/mp4" />
                 </video>
                 <div class="text_item item-trans">
                   <div class="none-hover">
@@ -694,10 +710,7 @@
                   loop
                   class="video-avatar"
                 >
-                  <source
-                    src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/videos/2.mp4" type="video/mp4" />
                 </video>
                 <div class="text_item item-trans">
                   <div class="none-hover">
@@ -721,10 +734,7 @@
                   loop
                   class="video-avatar"
                 >
-                  <source
-                    src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/videos/3.mp4" type="video/mp4" />
                 </video>
                 <div class="text_item item-trans">
                   <div class="none-hover">
@@ -742,10 +752,7 @@
                   loop
                   class="video-avatar"
                 >
-                  <source
-                    src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/videos/4.mp4" type="video/mp4" />
                 </video>
                 <div class="text_item item-trans">
                   <div class="none-hover">
@@ -765,10 +772,7 @@
                   loop
                   class="video-avatar"
                 >
-                  <source
-                    src="./assets/videos/ArtStation - NASA Astronaut Walk, Tod Ryan.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/videos/5.mp4" type="video/mp4" />
                 </video>
                 <div class="text_item item-trans">
                   <div class="none-hover">
@@ -895,7 +899,7 @@
 
             <div class="wrap-roadmap mt-5 pt-5">
               <div class="left">
-                <img src="./assets/images/img-left.png" alt="" />
+                <!-- <img src="./assets/images/img-left.png" alt="" /> -->
                 <div class="left-border"></div>
                 <div class="content">
                   <div class="overplays"></div>
@@ -1142,7 +1146,7 @@
       <!-- </div> -->
     </div>
   </footer>
-  <audio autoplay>
+  <audio autoplay id="audio" loop>
     <source src="./assets/audio//audio.m4a" />
   </audio>
 

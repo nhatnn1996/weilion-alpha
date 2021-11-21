@@ -129,6 +129,28 @@ window.onload = () => {
     },
   });
 
-  const video = $("#background-video");
-  video.play();
+  // const video = $("#background-video");
+  // video.play();
+
+  const $$$ = document.querySelector.bind(document);
+  const $$ = document.querySelectorAll.bind(document);
+  const btn = $$$("#btn-music");
+  let isActive = false;
+
+  btn.onclick = function () {
+    isActive = !isActive;
+
+    if (isActive) {
+      $$(".music-waves span").forEach((span) => {
+        span.classList.add("disabled");
+      });
+    
+      $("#audio").get(0).pause();
+    } else {
+      $$(".music-waves span.disabled").forEach((span) => {
+        span.classList.remove("disabled");
+      });
+      $("#audio").get(0).play();
+    }
+  };
 };
