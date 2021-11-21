@@ -109,21 +109,17 @@ window.onload = () => {
     update_screen();
   }, 100);
 
-  var figure = $(".w-team .item").hover(hoverVideo, hideVideo);
+  $(".item-wrap").hover(hoverVideo, hideVideo);
 
   function hoverVideo(e) {
     const element = e.target;
-    const video = $(element).find(".video-avatar");
-    $(element).toggleClass("active");
-    video.get(0).currentTime = 0;
-    video.get(0).play();
+    element.currentTime = 0;
+    element.play();
   }
 
   function hideVideo(e) {
     const element = e.target;
-    $(element).toggleClass("active");
-    const video = $(element).find(".video-avatar");
-    video.get(0).pause();
+    $(element).get(0).pause();
   }
 
   var swiper = new Swiper(".mySwiper", {
