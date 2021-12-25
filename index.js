@@ -179,3 +179,8 @@ window.onload = () => {
     }
   };
 };
+
+
+window.onscroll = function() {
+  console.log('scrolling');
+};
