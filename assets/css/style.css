@@ -1623,11 +1623,11 @@ span:nth-child(7) {
 }
 
 .wrap-wss {
-  margin-top: 2rem;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
   background: url("../images/image-WEILION.jpg");
   background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
 }
 /* .wrap-wss::before {
   content: "";
