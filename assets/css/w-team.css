@@ -83,6 +83,7 @@
   object-fit: cover;
   border-radius: 200px;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .bottom-item::after {
@@ -159,6 +160,7 @@
   object-fit: cover;
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: none !important;
 }
 
 .w-team .item .hover {
@@ -175,14 +177,23 @@
 .w-team .item:hover .none-hover {
   display: none;
 }
-.w-team .item.active img {
+.w-team .item-wrap:hover img {
   opacity: 0;
+}
+.w-team .item-wrap:hover video {
+  opacity: 1;
 }
 .w-team .item-wrap {
   position: relative;
   width: 16.5rem;
   height: 16.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   z-index: 1;
+  transition: 0.3s ease-in-out;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.w-team .item-wrap:hover {
+  transform: scale(0.9);
 }

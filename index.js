@@ -109,20 +109,18 @@ window.onload = () => {
     update_screen();
   }, 100);
 
-  var figure = $(".w-team .item").hover(hoverVideo, hideVideo);
+  $(".item-wrap").hover(hoverVideo, hideVideo);
 
   function hoverVideo(e) {
-    const element = e.target;
-    const video = $(element).find(".video-avatar");
-    $(element).toggleClass("active");
+    const element = e.currentTarget || e.target;
+    const video = $(element).find("video");
     video.get(0).currentTime = 0;
     video.get(0).play();
   }
 
   function hideVideo(e) {
-    const element = e.target;
-    $(element).toggleClass("active");
-    const video = $(element).find(".video-avatar");
+    const element = e.currentTarget || e.target;
+    const video = $(element).find("video");
     video.get(0).pause();
   }
 
