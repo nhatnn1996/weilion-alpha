@@ -131,7 +131,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 .content-main-responsive-item p {
@@ -311,6 +311,7 @@ nav ul li a {
     color: #f1f1f1;
   }
   .content-main-responsive {
+    padding: 0rem 1rem;
     display: block !important;
   }
   .content_purpose_advantaged {
