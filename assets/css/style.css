@@ -151,7 +151,7 @@ nav ul li a {
 .advantaged-container {
   margin-bottom: 4rem;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1280px) {
   #navbarNavDropdown {
     justify-content: flex-end !important;
   }
@@ -529,7 +529,7 @@ nav ul li a:hover {
 .content_generate_title {
   text-align: center;
   color: white;
-  margin-top: 74px;
+  margin: 74px 0rem;
   font-weight: bold;
 }
 .content_generate_contructor_left {
@@ -1320,6 +1320,18 @@ marquee {
   top: 0;
   width: 100%;
   z-index: 10000;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header .navbar {
+  width: 1200px;
+}
+@media (min-width: 1200px){
+  .header .navbar {
+    width: 1140px;
+  }
 }
 
 video {
